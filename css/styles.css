@@ -1,5 +1,91 @@
 :root {
-  --primary-text-color: rgba (0, 0, 0, 0.8);
-  --title-text-color: #000000;
-  --accent-color: orange;
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --text-color-white: #ffffff;
+}
+body {
+  font-family: Roboto, sans-serif;
+  color: #757575;
+}
+.list {
+  list-style: none;
+}
+.logo,
+.accent {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #212121;
+}
+.accent {
+  color: var(--accent-color);
+}
+/* sitte-nav */
+.site-nav .link {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.info .link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+.info .link:hover,
+.info .link:focus {
+  color: var(--accent-color);
+}
+/* hero */
+.hero {
+  background-color: #757575;
+  color: var(--text-color-white);
+  text-decoration: none;
+}
+.button {
+  color: var(--text-color-white);
+  text-decoration: none;
+}
+/* features */
+.feature-list .title {
+  color: var(--title-text-color);
+}
+.section-title {
+  color: var(--title-text-color);
+}
+.work-list .text {
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--text-color-white);
+}
+.team-list .title {
+  color: var(--title-text-color);
+}
+.footer {
+  background-color: #2f303a;
+}
+.footer-logo,
+.accent {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.footer-logo {
+  color: var(--text-color-white);
+}
+.footer-address {
+  color: var(--text-color-white);
+}
+.footer-info {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-appeal {
+  color: var(--text-color-white);
 }
