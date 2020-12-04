@@ -8,9 +8,18 @@ body {
   font-family: Roboto, sans-serif;
   color: #757575;
 }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 1200px;
+  /* outline: 2px solid red; */
+}
 .list {
   list-style: none;
 }
+/* Logo */
 .logo,
 .accent {
   font-family: Raleway, sans-serif;
@@ -24,8 +33,23 @@ body {
 .accent {
   color: var(--accent-color);
 }
-/* sitte-nav */
+/* main-nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+/* site-nav */
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -40,7 +64,17 @@ body {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+.info {
+  display: flex;
+  margin-left: auto;
+}
+.info .item:not(:last-child) {
+  margin-right: 50px;
+}
 .info .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;

@@ -1,90 +1,6 @@
-body {
-  font-family: Roboto, sans-serif;
-  color: #757575;
-}
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-  width: 1200px;
-  /* outline: 2px solid red; */
-}
 .primer {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-/* Logo */
-.logo,
-.accent {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: #212121;
-}
-.accent {
-  color: var(--accent-color);
-}
-/* main-nav */
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-/* site-nav */
-.site-nav {
-  display: flex;
-  margin-left: 93px;
-}
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
-}
-.site-nav .link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: var(--title-text-color);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.site-nav .link.current {
-  color: var(--accent-color);
-}
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
-.info {
-  display: flex;
-  margin-left: auto;
-}
-.info .item:not(:last-child) {
-  margin-right: 50px;
-}
-.info .link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: var(--primary-text-color);
-  /* text-decoration: none; */
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.info .link:hover,
-.info .link:focus {
-  color: var(--accent-color);
 }
 /* hero */
 .hero {
@@ -168,6 +84,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
+  padding: 0;
 }
 .work-list .item {
   flex-basis: calc(100% / 3 - 30px);
@@ -192,6 +109,7 @@ body {
 .team-list {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
 }
 .team-list .item {
   margin-right: 30px;
