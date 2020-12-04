@@ -52,22 +52,21 @@ body {
 .info .link:focus {
   color: var(--accent-color);
 }
+/* footer */
+.footer .container {
+  display: flex;
+}
 .footer {
   background-color: #2f303a;
 }
-.footer-logo,
-.accent {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
-.footer-logo {
+.logo.inverse {
+  display: block;
+  margin-bottom: 20px;
   color: var(--text-color-white);
 }
 .footer-address {
+  display: flex;
+  flex-direction: column;
   color: var(--text-color-white);
   font-style: normal;
   font-weight: 400;
@@ -75,14 +74,27 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.footer-info {
+.address {
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+.address-link {
+  margin-bottom: 9px;
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-appeal {
+  /* border: 1px solid tomato; */
+  margin-left: 70px;
   color: var(--text-color-white);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+.container.bottom {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  align-items: baseline;
 }
