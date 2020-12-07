@@ -8,6 +8,7 @@
   padding-bottom: 200px;
   height: 600px;
   background-color: #757575;
+  text-align: center;
 }
 .hero-title {
   margin-bottom: 30px;
@@ -16,12 +17,10 @@
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .button {
-  display: flex;
   margin-right: auto;
   margin-left: auto;
   border-radius: 4px;
@@ -35,7 +34,6 @@
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  text-align: center;
 }
 /* features */
 .feature-list {
@@ -48,11 +46,6 @@
 .feature-list .item:not(:last-child) {
   margin-right: 30px;
 }
-/* .feature-title {
-  visibility: hidden;
-  margin-top: 0;
-  margin-bottom: 0;
-} */
 .feature-list .title {
   margin-top: 0;
   margin-bottom: 10px;
