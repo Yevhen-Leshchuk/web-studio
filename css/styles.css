@@ -48,11 +48,11 @@
 .feature-list .item:not(:last-child) {
   margin-right: 30px;
 }
-.feature-title {
+/* .feature-title {
   visibility: hidden;
   margin-top: 0;
   margin-bottom: 0;
-}
+} */
 .feature-list .title {
   margin-top: 0;
   margin-bottom: 10px;
