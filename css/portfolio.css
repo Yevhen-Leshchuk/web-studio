@@ -7,6 +7,8 @@
 }
 .button {
   padding: 6px 22px;
+  border: 0px;
+
   background: #f5f4fa;
   border-radius: 4px;
   background: #f5f4fa;
@@ -15,7 +17,6 @@
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
-  border: 0px;
 }
 .button:not(:last-child) {
   margin-right: 8px;
@@ -29,22 +30,11 @@
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin-bottom: 94px;
   padding: 0;
 }
 .card {
   width: 370px;
-}
-.card-content {
-  padding-top: 20px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  background: #ffffff;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  box-sizing: border-box;
 }
 .portfolio .card {
   flex-basis: calc(100% / 3 - 30px);
@@ -55,7 +45,19 @@
   margin-right: 0;
 }
 .portfolio .card:nth-child(n + 7) {
-  margin-bottom: 94px;
+  margin-bottom: 0;
+}
+.card-content {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  box-sizing: border-box;
+
+  background: #ffffff;
 }
 .card .link {
   display: block;
@@ -64,6 +66,7 @@
   min-width: 322px;
   margin-top: 0;
   margin-bottom: 4px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -71,8 +74,9 @@
   letter-spacing: 0.06em;
 }
 .portfolio .desc {
-  min-width: 322px;
   margin: 0;
+  min-width: 322px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;

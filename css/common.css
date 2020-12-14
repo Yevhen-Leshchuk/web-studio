@@ -10,13 +10,13 @@ body {
 }
 /* sr-only */
 .visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 img {
@@ -66,6 +66,7 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+
   color: var(--title-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -91,6 +92,7 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -112,11 +114,13 @@ img {
 .logo.inverse {
   display: block;
   margin-bottom: 20px;
+
   color: var(--text-color-white);
 }
 .footer-address {
   display: flex;
   flex-direction: column;
+
   color: var(--text-color-white);
   font-style: normal;
   font-weight: 400;
@@ -131,11 +135,13 @@ img {
 .address-link {
   margin-bottom: 9px;
   text-decoration: none;
+
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-appeal {
   /* border: 1px solid tomato; */
   margin-left: 70px;
+
   color: var(--text-color-white);
   font-weight: 700;
   font-size: 14px;
