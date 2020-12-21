@@ -36,8 +36,7 @@ img {
   list-style: none;
 }
 /* Logo */
-.logo,
-.accent {
+.logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -46,7 +45,7 @@ img {
   text-decoration: none;
   color: #212121;
 }
-.accent {
+.logo__accent {
   color: var(--accent-color);
 }
 /* main-nav */
@@ -59,10 +58,10 @@ img {
   display: flex;
   margin-left: 93px;
 }
-.site-nav .item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
-.site-nav .link {
+.site-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -74,21 +73,21 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.site-nav .link.current {
+.site-nav__link--current {
   color: var(--accent-color);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: var(--accent-color);
 }
-.info {
+.header-info {
   display: flex;
   margin-left: auto;
 }
-.info .item:not(:last-child) {
+.header-info__item:not(:last-child) {
   margin-right: 50px;
 }
-.info .link {
+.header-info__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -100,18 +99,26 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.info .link:hover,
-.info .link:focus {
+.header-info__link:hover,
+.header-info__link:focus {
   color: var(--accent-color);
 }
 /* footer */
-.footer .container {
-  display: flex;
-}
 .footer {
   background-color: #2f303a;
 }
-.logo.inverse {
+.footer-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 1200px;
+  align-items: baseline;
+}
+.footer-info__logo {
   display: block;
   margin-bottom: 20px;
 
@@ -128,11 +135,11 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.address {
+.footer-address__address {
   margin-top: 0;
   margin-bottom: 9px;
 }
-.address-link {
+.footer-address__link {
   margin-bottom: 9px;
   text-decoration: none;
 
@@ -148,9 +155,4 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-.container.bottom {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  align-items: baseline;
 }

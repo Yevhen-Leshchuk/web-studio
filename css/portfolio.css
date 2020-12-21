@@ -1,11 +1,11 @@
-.section-button {
+.portfolio-button {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 94px;
   margin-bottom: 50px;
 }
-.button {
+.portfolio-button__button {
   padding: 6px 22px;
   border: 0px;
 
@@ -18,36 +18,39 @@
   line-height: 1.63;
   letter-spacing: 0.03em;
 }
-.button:not(:last-child) {
+.portfolio-button__button:not(:last-child) {
   margin-right: 8px;
 }
-.button:hover,
-.button:focus {
+.portfolio-button__button:hover,
+.portfolio-button__button:focus {
   background-color: var(--accent-color);
   color: var(--text-color-white);
   cursor: pointer;
 }
-.portfolio {
+.portfolio-list {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 94px;
   padding: 0;
 }
-.card {
+.portfolio-list__card {
   width: 370px;
 }
-.portfolio .card {
+.portfolio-list__card {
   flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.portfolio .card:nth-child(3n) {
+.portfolio-list__card:nth-child(3n) {
   margin-right: 0;
 }
-.portfolio .card:nth-child(n + 7) {
+.portfolio-list__card:nth-child(n + 7) {
   margin-bottom: 0;
 }
-.card-content {
+.portfolio-list__link {
+  display: block;
+}
+.portfolio-content {
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
@@ -59,10 +62,7 @@
 
   background: #ffffff;
 }
-.card .link {
-  display: block;
-}
-.portfolio .title {
+.portfolio-content__title {
   min-width: 322px;
   margin-top: 0;
   margin-bottom: 4px;
@@ -73,7 +73,7 @@
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.portfolio .desc {
+.portfolio-content__desc {
   margin: 0;
   min-width: 322px;
 
@@ -82,7 +82,7 @@
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
-.portfolio .text {
+.portfolio-content__text {
   background-color: rgba(33, 150, 243, 0.9);
   color: var(--text-color-white);
   font-weight: 400;

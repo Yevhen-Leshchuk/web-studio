@@ -14,146 +14,144 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!--top line-->
-    <header>
+    <!--header-->
+    <header class="header container">
       <!--main navigation-->
-      <div class="container">
-        <nav class="main-nav">
-          <a class="logo" lang="en" href="/"><span class="accent">Web</span>Studio</a>
-          <ul class="site-nav list">
-            <li class="item"><a class="link current" href="">Студия</a></li>
-            <li class="item"><a class="link" href="./portfolio.html">Портфолио</a></li>
-            <li class="item"><a class="link" href="">Контакты</a></li>
-          </ul>
-          <ul class="info list">
-            <li class="item"><a class="link" href="">info@devstudio.com</a></li>
-            <li class="item"><a class="link" href="">+38 096 111 11 11</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="main-nav">
+       <a class="logo" lang="en" href="/"><span class="logo__accent">Web</span>Studio</a>
+        <ul class="site-nav list">
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="">Студия</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфолио</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
+        </ul>
+        <ul class="header-info list">
+          <li class="header-info__item"><a class="header-info__link" href="">info@devstudio.com</a></li>
+          <li class="header-info__item"><a class="header-info__link" href="">+38 096 111 11 11</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <!--hero-->
-      <section class="hero">
-        <h1 class="hero-title">
+      <!--offer-->
+      <section class="offer">
+        <h1 class="offer__title">
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
         <button class="button" href="">Заказать услугу</button>
       </section>
       <!--features-->
-      <section class="container primer">
-          <h2 class="visually-hidden">Преимущества</h2>
+      <section class="feature container primer">
+        <h2 class="visually-hidden">Преимущества</h2>
         <ul class="feature-list list">
-          <li class="item">
-            <h3 class="title">Внимание к деталям</h3>
-            <p class="text">
+          <li class="feature-list__item">
+            <h3 class="feature-list__title">Внимание к деталям</h3>
+            <p class="feature-list__text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции. 
             </p>
           </li>
-          <li class="item">
-            <h3 class="title">Пунктуальность</h3>
-            <p class="text">
+          <li class="feature-list__item">
+            <h3 class="feature-list__title">Пунктуальность</h3>
+            <p class="feature-list__text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li class="item">
-            <h3 class="title">Планирование</h3>
-            <p class="text">
+          <li class="feature-list__item">
+            <h3 class="feature-list__title">Планирование</h3>
+            <p class="feature-list__text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li> 
-          <li class="item">
-            <h3 class="title">Современные технологии</h3>
-            <p class="text">
+          <li class="feature-list__item">
+            <h3 class="feature-list__title">Современные технологии</h3>
+            <p class="feature-list__text">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
           </li>
         </ul> 
       </section>
-      <!--works examples-->
-      <section class="container primer">
+      <!--work examples-->
+      <section class="work container primer">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="work-list list">
-           <li class="item">
+           <li class="work-list__item">
             <img src="./images/working/web-sites.png" alt="веб-сайты" width="370" height="294" />
            </li>
-           <li class="item">
+           <li class="work-list__item">
             <img src="./images/working/app.png" alt="приложения" width="370" height="294" />          
            </li>
-           <li class="item">
+           <li class="work-list__item">
             <img src="./images/working/design.png" alt="дизайн" width="370" height="294" />           
            </li>
           </ul>
       </section>
       <!--our team-->
-      <section class="section-team">
+      <section class="team">
        <div class="container primer">
        <h2 class="section-title">Наша команда</h2>
        <ul class="team-list list">
-          <li class="item">
-            <img class="images" src="./images/teams/Igor-Demyanenko.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+          <li class="team-list__item">
+            <img class="team-list__images" src="./images/teams/Igor-Demyanenko.jpg" alt="Игорь Демьяненко" width="270" height="260" />
             <div class="team-content">
-              <h3 class="title">Игорь Демьяненко</h3>
-              <p class="text">Product Designer</p>
+              <h3 class="team-content__title">Игорь Демьяненко</h3>
+              <p class="team-content__text">Product Designer</p>
             </div>
           </li>
-          <li class="item">
-            <img class="images" src="./images/teams/Olga-Repina.jpg" alt="Ольга Репина" width="270" height="260" />
+          <li class="team-list__item">
+            <img class="team-list__images" src="./images/teams/Olga-Repina.jpg" alt="Ольга Репина" width="270" height="260" />
             <div class="team-content">
-              <h3 class="title">Ольга Репина</h3>
-              <p class="text">Frontend Developer</p>
+              <h3 class="team-content__title">Ольга Репина</h3>
+              <p class="team-content__text">Frontend Developer</p>
             </div>
           </li>
-          <li class="item">
-            <img class="images" src="./images/teams/Nikolay-Tarasov.jpg" alt="Николай Тарасов" width="270" height="260" />
+          <li class="team-list__item">
+            <img class=team-list__images" src="./images/teams/Nikolay-Tarasov.jpg" alt="Николай Тарасов" width="270" height="260" />
             <div class="team-content">
-              <h3 class="title">Николай Тарасов</h3>
-              <p class="text">Marketing</p>
+              <h3 class="team-content__title">Николай Тарасов</h3>
+              <p class="team-content__text">Marketing</p>
             </div>
           </li>
-          <li class="item">
-            <img class="images" src="./images/teams/Michail-Ermakov.jpg" alt="Михаил Ермаков" width="270" height="260" />
+          <li class="team-list__item">
+            <img class="team-list__images" src="./images/teams/Michail-Ermakov.jpg" alt="Михаил Ермаков" width="270" height="260" />
             <div class="team-content">
-              <h3 class="title">Михаил Ермаков</h3>
-              <p class="text">UI Designer</p>
+              <h3 class="team-content__title">Михаил Ермаков</h3>
+              <p class="team-content__text">UI Designer</p>
             </div>
           </li>
         </ul>
         </div>
       </section>
       <!--our customers-->
-      <section class="section customers container primer">
+      <section class="customers container primer">
         <h2 class="section-title">Постоянные клиенты</h2>
         <ul class="customers-list list">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li class="customer-list_item"></li>
+          <li class="customer-list_item"></li>
+          <li class="customer-list_item"></li>
+          <li class="customer-list_item"></li>
+          <li class="customer-list_item"></li>
+          <li class="customer-list_item"></li>
+          <li class="customer-list_item"></li>
         </ul>
       </section>
     </main>
     <!--footer-->
     <footer class="footer">
-      <div class="container bottom">
-        <div class="logo-address">
-        <a class="logo inverse" lang="en" href="/"><span class="accent">Web</span>Studio</a>
+      <div class="footer-container">
+        <div class="footer-info">
+          <a class="logo footer-info__logo" lang="en" href="/"><span class="logo__accent">Web</span>Studio</a>
           <address class="footer-address">
-            <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
-            <a href="" class="address-link">info@example.com</a>
-            <a href="" class="address-link">+38 099 111 11 11</a>
+            <p class="footer-address__address">г. Киев, пр-т Леси Украинки, 26</p>
+            <a href="" class="footer-address__link">info@example.com</a>
+            <a href="" class="footer-address__link">+38 099 111 11 11</a>
           </address>
-      </div>
-      <div class="footer-appeal">
-        <b>присоединяйтесь</b>
-      </div>
+        </div>
+        <div class="footer-appeal">
+          <b>присоединяйтесь</b>
+        </div>
       </div>
     </footer>
   </body>
