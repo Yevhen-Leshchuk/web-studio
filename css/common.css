@@ -87,23 +87,25 @@ img {
 .header-info__item {
   display: inline-flex;
 }
-.header-info__icon--envelope::before {
+.header-info--envelope::before {
   content: '';
   margin-top: 34px;
   margin-right: 10px;
   margin-bottom: 34px;
   width: 16px;
   height: 12px;
+
   background-image: url(../images/icons-header/envelope.svg);
   background-size: contain;
 }
-.header-info__icon--phone::before {
+.header-info--phone::before {
   content: '';
   margin-top: 32px;
   margin-right: 10px;
   margin-bottom: 32px;
   width: 10px;
   height: 16px;
+
   background-image: url(../images/icons-header/phone.svg);
   background-size: contain;
 }
