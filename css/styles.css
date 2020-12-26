@@ -74,16 +74,16 @@
   background-repeat: no-repeat;
   background-color: #f5f4fa;
 }
-.feature-list--antenna::before {
+.icon-antenna::before {
   background-image: url(../images/icons-feature/antenna.svg);
 }
-.feature-list--clock::before {
+.icon-clock::before {
   background-image: url(../images/icons-feature/clock.svg);
 }
-.feature-list--diagram::before {
+.icon-diagram::before {
   background-image: url(../images/icons-feature/diagram.svg);
 }
-.feature-list--astronaut::before {
+.icon-astronaut::before {
   background-image: url(../images/icons-feature/astronaut.svg);
 }
 .feature-list__title {
@@ -160,7 +160,9 @@
 }
 .team-content {
   padding-top: 30px;
-  padding-bottom: 90px;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-bottom: 30px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -179,13 +181,38 @@
 }
 .team-content__text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+}
+.team-social {
+  display: flex;
+}
+.team-social__item::before {
+  display: block;
+  content: '';
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.icon-instagram::before {
+  background-image: url(../images/icons-team/instagram.svg);
+}
+.icon-twitter::before {
+  background-image: url(../images/icons-team/twitter.svg);
+}
+.icon-facebook::before {
+  background-image: url(../images/icons-team/facebook.svg);
+}
+.icon-linkedin::before {
+  background-image: url(../images/icons-team/linkedin.svg);
 }
 .customers {
   height: 370px;

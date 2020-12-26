@@ -87,7 +87,7 @@ img {
 .header-info__item {
   display: inline-flex;
 }
-.header-info--envelope::before {
+.icon-envelope::before {
   content: '';
   margin-top: 34px;
   margin-right: 10px;
@@ -98,7 +98,7 @@ img {
   background-image: url(../images/icons-header/envelope.svg);
   background-size: contain;
 }
-.header-info--phone::before {
+.icon-phone::before {
   content: '';
   margin-top: 32px;
   margin-right: 10px;
