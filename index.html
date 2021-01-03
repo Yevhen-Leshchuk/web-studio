@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -24,8 +23,14 @@
           <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
         </ul>
         <ul class="header-info">
-          <li class="header-info__item icon-envelope"><a class="header-info__link" href="">info@devstudio.com</a></li>
-          <li class="header-info__item icon-phone"><a class="header-info__link" href="">+38 096 111 11 11</a></li>
+          <li class="header-info__item"><a class="header-info__link" href="mailto:info@devstudio.com">
+            <svg class="header-info__envelope">
+              <use href="../images/sprite/sprite.svg#envelope"></use>
+            </svg>info@devstudio.com</a></li>
+          <li class="header-info__item"><a class="header-info__link" href="tel:+38 096 111 11 11">
+            <svg class="header-info__phone">
+              <use href="../images/sprite/sprite.svg#phone"></use>
+            </svg>+38 096 111 11 11</a></li>
         </ul>
       </nav>
     </header>
@@ -42,28 +47,46 @@
       <section class="feature container primer">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="feature-list">
-          <li class="feature-list__item icon-antenna">
+          <li class="feature-list__item">
+            <div class="feature-icon">
+              <svg class="feature-icon__antenna icon"><use href="../images/sprite/sprite.svg#antenna"></use></svg>
+            </div>
             <h3 class="feature-list__title">Внимание к деталям</h3>
             <p class="feature-list__text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции. 
             </p>
           </li>
-          <li class="feature-list__item icon-clock">
+          <li class="feature-list__item">
+            <div class="feature-icon">
+              <svg class="feature-icon__clock icon">
+                <use href="../images/sprite/sprite.svg#clock"></use>
+              </svg>
+            </div>
             <h3 class="feature-list__title">Пунктуальность</h3>
             <p class="feature-list__text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li class="feature-list__item icon-diagram">
+          <li class="feature-list__item">
+            <div class="feature-icon">
+              <svg class="feature-icon__diagram icon">
+                <use href="../images/sprite/sprite.svg#diagram"></use>
+              </svg>
+            </div>
             <h3 class="feature-list__title">Планирование</h3>
             <p class="feature-list__text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li> 
-          <li class="feature-list__item icon-astronaut">
+          <li class="feature-list__item">
+            <div class="feature-icon">
+              <svg class="feature-icon__astronaut icon">
+                <use href="../images/sprite/sprite.svg#astronaut"></use>
+              </svg>
+            </div>
             <h3 class="feature-list__title">Современные технологии</h3>
             <p class="feature-list__text">
               Значимость этих проблем настолько очевидна, что реализация
@@ -98,6 +121,7 @@
               <h3 class="team-content__title">Игорь Демьяненко</h3>
               <p class="team-content__text">Product Designer</p>
               <ul class="team-social">
+                <!--переписть названия классов типа icon-instagram под модификаторы-->
                 <li class="team-social__item"><a href="" class="team-social__link icon-instagram"></a></li>
                 <li class="team-social__item"><a href="" class="team-social__link icon-twitter"></a></li>
                 <li class="team-social__item"><a href="" class="team-social__link icon-facebook"></a></li>

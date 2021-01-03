@@ -131,36 +131,12 @@ img {
   display: flex;
   margin-left: auto;
 }
-.header-info__item {
-  display: inline-flex;
-}
-.icon-envelope::before {
-  content: '';
-  margin-top: 34px;
-  margin-right: 10px;
-  margin-bottom: 34px;
-  width: 16px;
-  height: 12px;
-
-  background-image: url(../images/icons-header/envelope.svg);
-  background-size: contain;
-}
-.icon-phone::before {
-  content: '';
-  margin-top: 32px;
-  margin-right: 10px;
-  margin-bottom: 32px;
-  width: 10px;
-  height: 16px;
-
-  background-image: url(../images/icons-header/phone.svg);
-  background-size: contain;
-}
 .header-info__item:not(:last-child) {
   margin-right: 50px;
 }
 .header-info__link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -169,6 +145,18 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.header-info__envelope {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+}
+.header-info__phone {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
 }
 .header-info__link:hover,
 .header-info__link:focus {
