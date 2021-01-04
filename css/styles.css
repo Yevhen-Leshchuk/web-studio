@@ -177,9 +177,11 @@
 .team-social {
   display: flex;
 }
+.team-social__item {
+  margin-right: 10px;
+}
 .team-social__link {
   display: block;
-  margin-right: 10px;
   padding: 12px;
   width: 44px;
   height: 44px;
@@ -197,9 +199,6 @@
   height: 20px;
   fill: currentColor;
 }
-/* .team-social__icon:hover {
-  color: #ffffff;
-} */
 /* our customers */
 .customers {
   height: 370px;
@@ -207,33 +206,42 @@
 .customers-list {
   display: flex;
 }
-.customer-list__item::before {
-  display: block;
-  content: '';
+.customer-list__item {
   margin-right: 30px;
+}
+.customer-list__link {
+  display: block;
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
-  background-position: center;
-  background-repeat: no-repeat;
+  color: #afb1b8;
 }
-.logo-yaco::before {
-  background-image: url(../images/icons-customers/ya&co.svg);
+.customer-list__logo {
+  fill: currentColor;
 }
-.logo-tagcompany::before {
-  background-image: url(../images/icons-customers/tagline-company.svg);
+.logo-yaco {
+  padding: 20px 63px;
 }
-.logo-company::before {
-  background-image: url(../images/icons-customers/company.svg);
+.logo-tagcompany {
+  padding: 19px 65px;
 }
-.logo-foster::before {
-  background-image: url(../images/icons-customers/foster.svg);
+.logo-company {
+  padding: 24px 64px;
 }
-.logo-brand::before {
-  background-image: url(../images/icons-customers/brand.svg);
+.logo-foster {
+  padding: 24px 45px;
 }
-.logo-companytag::before {
-  background-image: url(../images/icons-customers/company-tagline.svg);
+.logo-brand {
+  padding: 22px 55px;
+}
+.logo-companytag {
+  padding: 22px 40px;
+}
+.customer-list__link:hover {
+  border-color: var(--accent-color);
+}
+.customer-list__link:hover .customer-list__logo {
+  fill: var(--accent-color);
 }

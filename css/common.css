@@ -127,6 +127,7 @@ img {
 .site-nav__link:focus {
   color: var(--accent-color);
 }
+/* header-info */
 .header-info {
   display: flex;
   margin-left: auto;
