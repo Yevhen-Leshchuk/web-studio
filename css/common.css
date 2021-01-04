@@ -224,29 +224,23 @@ img {
 .footer-social {
   display: flex;
 }
-.footer-social__link {
-  display: inline-block;
+.footer-social__item {
   margin-right: 10px;
+}
+.footer-social__link {
+  display: block;
+  padding: 12px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
 
+  color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px;
 }
-.footer-social__instagram {
-  background-image: url(../images/icons-footer/instagram.svg);
-}
-.footer-social__twitter {
-  background-image: url(../images/icons-footer/twitter.svg);
-}
-.footer-social__facebook {
-  background-image: url(../images/icons-footer/facebook.svg);
-}
-.footer-social__linkedin {
-  background-image: url(../images/icons-footer/linkedin.svg);
+.footer-social__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 .footer-social__link:hover {
   background-color: var(--accent-color);
