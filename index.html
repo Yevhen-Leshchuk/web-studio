@@ -41,7 +41,16 @@
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button class="button" href="">Заказать услугу</button>
+        <button class="button" data-modal-open href="">Заказать услугу</button>
+        <div class="backdrop backdrop--hidden" data-modal>
+          <div class="modal">
+            <button class="modal-button" data-modal-close href="">
+              <svg class="modal-button__icon">
+                <use href="./images/sprite/sprite.svg#Close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </section>
       <!--features-->
       <section class="feature container primer">
@@ -366,5 +375,6 @@
         </div>
       </div>
     </footer>
+      <script src="./js/modal.js"></script>
   </body>
 </html>
