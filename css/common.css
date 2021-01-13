@@ -260,6 +260,7 @@ img {
   height: 20px;
   fill: currentColor;
 }
-.footer-social__link:hover {
+.footer-social__link:hover,
+.footer-social__link:focus {
   background-color: var(--accent-color);
 }
