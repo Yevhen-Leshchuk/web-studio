@@ -49,6 +49,37 @@
                 <use href="./images/sprite/sprite.svg#Close"></use>
               </svg>
             </button>
+            <form class="form js-speaker-form">
+              <b class="form-appeal">Оставьте свои данные, мы вам перезвоним</b>
+               <p class="form-field">
+                <label class="form-field__label">Имя
+                  <input class="form-field__input" type="text" name="name">
+                </label>
+               </p>
+               <p class="form-field">
+                <label class="form-field__label">Телефон
+                  <input class="form-field__input" type="tel" name="tel">
+                </label>
+               </p>
+               <p class="form-field">
+                <label class="form-field__label">Почта
+                  <input class="form-field__input" type="email" name="mail">
+                </label>
+               </p>
+               <p class="form-textarea">
+                <label class="form-textarea__label">Комментарий
+                    <textarea class="form-textarea__input" name="comment" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                </label>
+               </p>
+               <p class="form-checkbox">
+                <label class="form-checkbox__label">
+                  <input class="form-checkbox__input" type="checkbox" name="policy">
+                  Соглашаюсь с рассылкой и принимаю
+                  <a href="#">Условия договора</a>
+                </label>
+              </p>
+              <button class="button" type="submit">Отправить</button>
+            </form>
           </div>
         </div>
       </section>
@@ -376,5 +407,20 @@
       </div>
     </footer>
       <script src="./js/modal.js"></script>
+        <script>
+          (() => {
+            document
+              .querySelector('.js-speaker-form')
+              .addEventListener('submit', e => {
+                e.preventDefault();
+
+                new FormData(e.currentTarget).forEach((value, name) =>
+                  console.log(`${name}: ${value}`),
+                );
+
+                e.currentTarget.reset();
+              });
+          })();
+        </script>
   </body>
 </html>
