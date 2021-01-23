@@ -51,33 +51,27 @@
             </button>
             <form class="form js-speaker-form">
               <b class="form-appeal">Оставьте свои данные, мы вам перезвоним</b>
-               <p class="form-field">
-                <label class="form-field__label">Имя
+                <label class="form-field">
                   <input class="form-field__input" type="text" name="name">
+                  <span class="form-field__label">Имя</span>
                 </label>
-               </p>
-               <p class="form-field">
-                <label class="form-field__label">Телефон
+                <label class="form-field">
                   <input class="form-field__input" type="tel" name="tel">
+                  <span class="form-field__label">Телефон</span>  
                 </label>
-               </p>
-               <p class="form-field">
-                <label class="form-field__label">Почта
+                <label class="form-field">
                   <input class="form-field__input" type="email" name="mail">
+                  <span class="form-field__label">Почта</span>  
                 </label>
-               </p>
-               <p class="form-textarea">
-                <label class="form-textarea__label">Комментарий
-                    <textarea class="form-textarea__input" name="comment" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
-                </label>
-               </p>
-               <p class="form-checkbox">
-                <label class="form-checkbox__label">
+                <p class="form-textarea">
+                 <label for="comment" class="form-textarea__label">Комментарий</label>
+                    <textarea class="form-textarea__textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                </p>
+                <label class="form-checkbox">
                   <input class="form-checkbox__input" type="checkbox" name="policy">
-                  Соглашаюсь с рассылкой и принимаю
-                  <a href="#">Условия договора</a>
+                  <span class="form-checkbox__label">Соглашаюсь с рассылкой и принимаю</span>
+                  <a class="form-checkbox__link" href="#">Условия договора</a>
                 </label>
-              </p>
               <button class="button" type="submit">Отправить</button>
             </form>
           </div>

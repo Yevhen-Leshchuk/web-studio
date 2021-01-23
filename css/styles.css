@@ -89,8 +89,7 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  min-width: 528px;
-  min-height: 521px;
+  max-width: 528px;
 
   padding: 40px;
 
@@ -123,6 +122,7 @@
   display: inline-block;
   margin-bottom: 30px;
 
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -131,35 +131,87 @@
   color: #212121;
 }
 .form-field {
+  display: block;
+  position: relative;
   margin-bottom: 28px;
 }
-.form-field {
-  margin-bottom: 20px;
-}
 .form-field__input {
-  width: 100%;
+  width: 448px;
   height: 40px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
+.form-field__label {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translateY(-50%);
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
 .form-textarea {
+  display: flex;
+  flex-direction: column;
+
   margin-bottom: 20px;
 }
-.form-textarea__input {
-  width: 100%;
-  resize: none;
+.form-textarea__label {
+  margin-bottom: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+  text-align: left;
+}
+.form-textarea__textarea {
+  width: 448px;
+  height: 120px;
   padding: 12px 16px;
+  resize: none;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
   border-radius: 4px;
 }
+.form-textarea__textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+  text-align: left;
+  color: rgba(117, 117, 117, 0.5);
+}
 .form-checkbox {
-  position: relative;
-
+  display: flex;
+  align-items: center;
   margin-bottom: 30px;
-  padding-left: 12px;
-  padding-right: 12px;
+}
+.form-checkbox__input {
+  margin-right: 7px;
+}
+.form-checkbox__label {
+  margin-right: 6px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.form-checkbox__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  text-decoration: underline;
 }
 /* features */
 .feature-list {
