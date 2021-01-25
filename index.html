@@ -41,15 +41,15 @@
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button class="button" data-modal-open href="">Заказать услугу</button>
+        <button class="button" data-modal-open type="button">Заказать услугу</button>
         <div class="backdrop backdrop--hidden" data-modal>
           <div class="modal">
-            <button class="modal-button" data-modal-close href="">
+            <button class="modal-button" type="button" data-modal-close href="">
               <svg class="modal-button__icon">
                 <use href="./images/sprite/sprite.svg#Close"></use>
               </svg>
             </button>
-            <form class="form js-speaker-form" autocomplete="off">
+            <form class="form js-speaker-form" name="persone data" autocomplete="off">
               <b class="form-appeal">Оставьте свои данные, мы вам перезвоним</b>
                 <label class="form-field">
                   <input class="form-field__input" type="text" name="name" placeholder=" ">
@@ -82,7 +82,7 @@
                   <span class="form-checkbox__label">Соглашаюсь с рассылкой и принимаю</span>
                   <a class="form-checkbox__link" href="#">Условия договора</a>
                 </label>
-              <button class="button" type="submit">Отправить</button>
+              <button class="button" type="submit" value="submit">Отправить</button>
             </form>
           </div>
         </div>
@@ -408,6 +408,17 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form" name="subscription" autocomplete="off">
+          <label class="footer-field">
+            <span class="footer-field__label">Подпишитесь на рассылку</span>
+            <input  class="footer-field__input" type="email" name="mail" placeholder="E-mail">
+          </label>
+          <button class="button footer-button" type="submit" value="submit">Подписаться
+            <svg class="footer-button__icon">
+              <use href="./images/sprite/sprite.svg#send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
       <script src="./js/modal.js"></script>

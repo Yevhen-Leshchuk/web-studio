@@ -82,7 +82,23 @@ img {
   padding-right: 15px;
   padding-left: 15px;
   width: 1200px;
-  /* outline: 2px solid red; */
+}
+.button {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 32px;
+  min-width: 200px;
+  border-radius: 4px;
+  border: solid 1px var(--accent-color);
+
+  cursor: pointer;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--text-color-white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
 /* header */
 .header {
@@ -229,8 +245,8 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-appeal {
-  /* border: 1px solid tomato; */
   margin-left: 70px;
+  margin-right: 93px;
 
   color: var(--text-color-white);
   font-weight: 700;
@@ -269,4 +285,66 @@ img {
 .footer-social__link:hover,
 .footer-social__link:focus {
   background-color: var(--accent-color);
+}
+/* footer-form */
+.footer-form {
+  display: flex;
+  align-items: flex-end;
+}
+.footer-field__label {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.footer-field__input {
+  display: block;
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: #2f303a;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-button {
+  position: relative;
+  padding-top: 10px;
+  padding-right: 62px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+}
+.footer-button__icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+.footer-field__input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+.footer-field__input:invalid {
+  outline: none;
+  border-color: red;
 }
