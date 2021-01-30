@@ -1,0 +1,42 @@
+.form-textarea {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 20px;
+}
+.form-textarea__label {
+  margin-bottom: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $primaryColor;
+  text-align: left;
+}
+.form-textarea__textarea {
+  width: 448px;
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition: border-color 250ms $cubicBezier;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $primaryColor;
+    text-align: left;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &:focus {
+    outline: none;
+    border-color: $accentColor;
+  }
+}
