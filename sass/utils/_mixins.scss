@@ -1,3 +1,11 @@
 @mixin paddingLogo($type) {
   padding: $type;
 }
+@mixin flexDirection($type: column) {
+  display: flex;
+  flex-direction: $type;
+}
+@mixin alignedFlex($flexType: flex, $alignType: centr) {
+  display: $flexType;
+  align-items: $alignType;
+}

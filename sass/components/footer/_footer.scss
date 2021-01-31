@@ -1,0 +1,10 @@
+.footer {
+  background-color: $bgColorFooter;
+}
+.footer-container {
+  @extend %container;
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  align-items: baseline;
+}
