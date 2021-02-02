@@ -2,13 +2,19 @@
   display: inline-block;
   margin-bottom: 30px;
 
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include fontProperty(
+    $color: $titleColor,
+    $weight: 700,
+    $size: 20px,
+    $height: 1.15
+  );
   text-align: center;
-  letter-spacing: 0.03em;
-
-  color: $titleColor;
+  //   color: $titleColor;
+  //   font-weight: 700;
+  //   font-size: 20px;
+  //   line-height: 1.15;
+  //
+  //   letter-spacing: 0.03em;
 }
 .form-field {
   display: block;
@@ -41,11 +47,17 @@
   left: 42px;
   transform: translateY(-50%);
 
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: $primaryColor;
+  @include fontProperty(
+    $color: $primaryColor,
+    $size: 12px,
+    $height: 1.17,
+    $spacing: 0.01em
+  );
+  //   color: $primaryColor;
+  //   font-weight: 400;
+  //   font-size: 12px;
+  //   line-height: 1.17;
+  //   letter-spacing: 0.01em;
 
   transition: transform 250ms $cubicBezier;
 

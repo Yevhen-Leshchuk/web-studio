@@ -1,11 +1,16 @@
 .logo {
   font-family: $fontFamilyLogo;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: $titleColor;
-
+  @include fontProperty(
+    $color: $titleColor,
+    $weight: 700,
+    $size: 26px,
+    $height: 1.19
+  );
+  // color: $titleColor;
+  // font-weight: 700;
+  // font-size: 26px;
+  // line-height: 1.19;
+  // letter-spacing: 0.03em;
   &__accent {
     color: $accentColor;
   }

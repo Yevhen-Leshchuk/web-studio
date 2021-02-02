@@ -43,17 +43,19 @@
 
 .form-checkbox__label {
   margin-right: 6px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: $primaryColor;
+  @include fontProperty($color: $primaryColor, $height: 1.17);
+  // color: $primaryColor;
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 1.17;
+  // letter-spacing: 0.03em;
 }
 .form-checkbox__link {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: $accentColor;
+  @include fontProperty($color: $accentColor, $height: 1.17);
   text-decoration: underline;
+  // color: $accentColor;
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 1.17;
+  // letter-spacing: 0.03em;
 }

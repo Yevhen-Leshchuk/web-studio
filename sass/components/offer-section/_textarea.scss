@@ -7,11 +7,18 @@
 .form-textarea__label {
   margin-bottom: 4px;
 
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: $primaryColor;
+  @include fontProperty(
+    $color: $primaryColor,
+    $size: 12px,
+    $height: 1.17,
+    $spacing: 0.01em
+  );
+
+  // color: $primaryColor;
+  // font-weight: 400;
+  // font-size: 12px;
+  // line-height: 1.17;
+  // letter-spacing: 0.01em;
   text-align: left;
 }
 .form-textarea__textarea {
@@ -27,13 +34,19 @@
   transition: border-color 250ms $cubicBezier;
 
   &::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: $primaryColor;
+    @include fontProperty(
+      $color: rgba(117, 117, 117, 0.5),
+      $size: 12px,
+      $height: 1.17,
+      $spacing: 0.01em
+    );
+    // color: rgba(117, 117, 117, 0.5);
+    // font-weight: 400;
+    // font-size: 12px;
+    // line-height: 1.17;
+    // letter-spacing: 0.01em;
+
     text-align: left;
-    color: rgba(117, 117, 117, 0.5);
   }
   &:focus {
     outline: none;

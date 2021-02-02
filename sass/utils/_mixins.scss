@@ -5,7 +5,27 @@
   display: flex;
   flex-direction: $type;
 }
-@mixin alignedFlex($flexType: flex, $alignType: centr) {
-  display: $flexType;
-  align-items: $alignType;
+@mixin alignedFlex($typeFlex: flex, $typeAlign: center) {
+  display: $typeFlex;
+  align-items: $typeAlign;
+}
+@mixin bordered($color) {
+  border-right: 1px solid $borderColorCurd;
+  border-bottom: 1px solid $borderColorCurd;
+  border-left: 1px solid $borderColorCurd;
+}
+@mixin fontProperty(
+  $color: none,
+  $weight: 400,
+  $size: 14px,
+  $height: 1.14,
+  $spacing: 0.03em,
+  $transform: none
+) {
+  color: $color;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $spacing;
+  text-transform: $transform;
 }

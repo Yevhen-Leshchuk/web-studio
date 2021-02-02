@@ -20,10 +20,19 @@
 }
 .offer__title {
   margin-bottom: 30px;
-  color: $whiteColor;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+
+  @include fontProperty(
+    $color: $whiteColor,
+    $weight: 900,
+    $size: 44px,
+    $height: 1.36,
+    $spacing: 0.06em,
+    $transform: uppercase
+  );
+  // color: $whiteColor;
+  // font-weight: 900;
+  // font-size: 44px;
+  // line-height: 1.36;
+  // letter-spacing: 0.06em;
+  // text-transform: uppercase;
 }

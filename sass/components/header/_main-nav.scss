@@ -1,5 +1,4 @@
 .main-nav {
   @extend %container;
-  display: flex;
-  align-items: center;
+  @include alignedFlex();
 }

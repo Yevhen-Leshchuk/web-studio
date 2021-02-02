@@ -1,19 +1,21 @@
 .footer-form {
-  @include alignedFlex($alignType: flex-end);
+  @include alignedFlex($typeAlign: flex-end);
 }
 .footer-field__label {
   display: inline-block;
-
   margin-bottom: 20px;
-
+  @include fontProperty(
+    $color: $whiteColor,
+    $weight: 700,
+    $transform: uppercase
+  );
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: $whiteColor;
+  // color: $whiteColor;
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.03em;
+  // text-transform: uppercase;
 }
 .footer-field__input {
   display: block;
@@ -27,13 +29,17 @@
   border-radius: 4px;
 
   background-color: $bgColorFooter;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  align-items: center;
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
+  @include fontProperty(
+    $color: rgba(255, 255, 255, 0.6),
+    $size: 16px,
+    $height: 1.25
+  );
+  // color: rgba(255, 255, 255, 0.6);
+  // font-weight: 400;
+  // font-size: 16px;
+  // line-height: 1.25;
+  // align-items: center;
+  // letter-spacing: 0.03em;
 
   &:focus {
     outline: none;
