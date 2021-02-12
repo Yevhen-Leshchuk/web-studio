@@ -1,4 +1,5 @@
 @import './utils/variables';
+@import './utils/breakpoints';
 @import './base/normalize';
 @import './base/reset-styles';
 @import './components/common/body';
@@ -6,10 +7,12 @@
 @import './utils/mixins';
 @import './components/common/page-button';
 @import './components/header/logo';
+@import './components/header/menu';
 @import './components/header/header';
 @import './components/header/main-nav';
 @import './components/header/site-nav';
 @import './components/header/header-info';
+@import './components/header/header-social';
 @import './components/offer-section/offer';
 @import './components/offer-section/modal';
 @import './components/offer-section/form-field';

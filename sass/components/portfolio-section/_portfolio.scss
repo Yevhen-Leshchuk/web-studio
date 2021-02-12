@@ -28,7 +28,7 @@
   display: block;
 }
 .portfolio-content {
-  @include bordered($borderColorCurd);
+  @include bordered($borderColorCard);
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;

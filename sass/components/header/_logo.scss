@@ -1,4 +1,5 @@
 .logo {
+  margin-right: 88px;
   font-family: $fontFamilyLogo;
   @include fontProperty(
     $color: $titleColor,

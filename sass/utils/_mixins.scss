@@ -10,9 +10,9 @@
   align-items: $typeAlign;
 }
 @mixin bordered($color) {
-  border-right: 1px solid $borderColorCurd;
-  border-bottom: 1px solid $borderColorCurd;
-  border-left: 1px solid $borderColorCurd;
+  border-right: 1px solid $borderColorCard;
+  border-bottom: 1px solid $borderColorCard;
+  border-left: 1px solid $borderColorCard;
 }
 @mixin fontProperty(
   $color: none,
@@ -28,4 +28,11 @@
   line-height: $height;
   letter-spacing: $spacing;
   text-transform: $transform;
+}
+@mixin containerMedia($mobile) {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: $mobile;
 }
