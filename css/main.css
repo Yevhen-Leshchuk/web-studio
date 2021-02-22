@@ -1566,4 +1566,10 @@ body.modal-open {
   letter-spacing: 0.03em;
   text-transform: none;
 }
+
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */
