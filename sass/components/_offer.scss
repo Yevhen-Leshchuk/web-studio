@@ -3,7 +3,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
   max-width: 1600px;
-  background-image: url(../../images/offer/offer-mobile-480.jpg);
+  background-image: url(..//..//../images/offer/offer-mobile-480.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -11,7 +11,7 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url(../../images/offer/offer-mobile2x.jpg);
+    background-image: url(..//..//../images/offer/offer-mobile2x.jpg);
   }
   @media screen and (min-width: 480px) {
     margin-bottom: 60px;
@@ -19,22 +19,22 @@
     padding-bottom: 118px;
   }
   @media screen and (min-width: 768px) {
-    background-image: url(../../images/offer/offer-tablet-768.jpg);
+    background-image: url(..//..//../images/offer/offer-tablet-768.jpg);
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../../images/offer/offer-tablet2x.jpg);
+      background-image: url(..//..//../images/offer/offer-tablet2x.jpg);
     }
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 94px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../../images/offer/offer-desktop-1600.jpg);
+    background-image: url(..//..//../images/offer/offer-desktop-1600.jpg);
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../../images/offer/offer-desktop2x.jpg);
+      background-image: url(..//..//../images/offer/offer-desktop2x.jpg);
     }
   }
 }
