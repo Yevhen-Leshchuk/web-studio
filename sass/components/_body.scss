@@ -2,3 +2,6 @@ body {
   font-family: $fontFamilyBody;
   color: $primaryColor;
 }
+body.modal-open {
+  overflow: hidden;
+}

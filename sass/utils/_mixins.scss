@@ -30,9 +30,8 @@
   text-transform: $transform;
 }
 @mixin containerMedia($mobile) {
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 15px;
+  margin: 0 auto;
   padding-left: 15px;
+  padding-right: 15px;
   width: $mobile;
 }
