@@ -1,0 +1,140 @@
+.team {
+  background-color: $bgColorBlock;
+}
+.team-section {
+  @media screen and (max-width: 479px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.team-list {
+  padding: 0;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.section-title {
+  @extend %section-title;
+}
+.team-title {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+
+    color: $titleColor;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
+.team-list__item {
+  margin-bottom: 30px;
+  width: 250px;
+
+  &:nth-child(4n) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+    &:nth-child(n + 3) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    margin-bottom: 0;
+  }
+}
+.team-content {
+  padding-top: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-bottom: 24px;
+  background: $whiteColor;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-content__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  @include fontProperty(
+    $color: $titleColor,
+    $weight: 500,
+    $size: 16px,
+    $height: 1.19
+  );
+  text-align: center;
+}
+
+.team-content__text {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  @include fontProperty($color: $primaryColor, $size: 16px, $height: 1.19);
+  text-align: center;
+}
+.team-social {
+  display: flex;
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+  }
+}
+.team-social__item:not(:last-child) {
+  margin-right: 5px;
+  @media screen and (min-width: 480px) {
+    margin-right: 10px;
+  }
+}
+.team-social__link {
+  display: block;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $socialLinkColor;
+
+  transition: background-color 250ms $cubicBezier;
+
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+  }
+}
+
+.team-social__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+
+  transition: fill 250ms $cubicBezier;
+
+  .team-social__link:hover &,
+  .team-social__link:focus & {
+    fill: $whiteColor;
+  }
+}

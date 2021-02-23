@@ -1,6 +1,5 @@
 .offer {
   margin: auto;
-  margin-bottom: 40px;
   padding-top: 50px;
   padding-bottom: 50px;
   max-width: 1600px;
@@ -15,7 +14,6 @@
     background-image: url(..//..//../images/offer/offer-mobile2x.jpg);
   }
   @media screen and (min-width: 480px) {
-    margin-bottom: 60px;
     padding-top: 118px;
     padding-bottom: 118px;
   }
@@ -28,7 +26,6 @@
     }
   }
   @media screen and (min-width: 1200px) {
-    margin-bottom: 94px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: url(..//..//../images/offer/offer-desktop-1600.jpg);
