@@ -1,0 +1,120 @@
+.customers {
+  @media screen and (max-width: 479px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.section-title {
+  @extend %section-title;
+}
+.customers-title {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+
+    color: $titleColor;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
+.customers-list {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.customer-list__item {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 480px) {
+    margin-left: 0;
+    margin-bottom: 30px;
+
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &:nth-child(1n + 1) {
+      margin-right: 30px;
+    }
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:nth-child(n + 4) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.customer-list__link {
+  display: block;
+  width: 210px;
+  height: 90px;
+  border: 1px solid $socialLinkColor;
+  border-radius: 4px;
+  text-align: center;
+
+  color: $socialLinkColor;
+
+  transition: background-color 250ms $cubicBezier;
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+  &:hover,
+  &:focus {
+    border-color: $accentColor;
+  }
+}
+.customer-list__logo {
+  fill: currentColor;
+
+  transition: fill 250ms $cubicBezier;
+
+  .customer-list__link:hover &,
+  .customer-list__link:focus & {
+    fill: $accentColor;
+  }
+}
+.logo-yaco {
+  @include paddingLogo(20px 63px);
+}
+.logo-tagcompany {
+  @include paddingLogo(19px 65px);
+}
+.logo-company {
+  @include paddingLogo(24px 64px);
+}
+.logo-foster {
+  @include paddingLogo(24px 45px);
+}
+.logo-brand {
+  @include paddingLogo(22px 55px);
+}
+.logo-companytag {
+  @include paddingLogo(22px 40px);
+}

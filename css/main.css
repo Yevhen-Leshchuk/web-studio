@@ -1651,7 +1651,7 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .team-section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1662,6 +1662,18 @@ body.modal-open {
   .team-section {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .team-title {
+    margin-bottom: 30px;
+    color: #212121;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -1679,36 +1691,18 @@ body.modal-open {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .team-title {
-    margin-bottom: 30px;
-    color: #212121;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.03em;
-  }
-}
-
 .team-list__item {
   margin-bottom: 30px;
-  width: 250px;
 }
 
 .team-list__item:nth-child(4n) {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 480px) {
-  .team-list__item {
-    width: 450px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .team-list__item {
-    width: 354px;
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
   }
   .team-list__item:nth-child(2n) {
     margin-right: 0;
@@ -1723,7 +1717,8 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) {
   .team-list__item {
-    width: 270px;
+    -ms-flex-preferred-size: calc(100% / 4 - 30px);
+        flex-basis: calc(100% / 4 - 30px);
     margin-bottom: 0;
   }
   .team-list__item:not(:last-child) {
@@ -1816,5 +1811,149 @@ body.modal-open {
 .team-social__link:hover .team-social__icon,
 .team-social__link:focus .team-social__icon {
   fill: #ffffff;
+}
+
+@media screen and (max-width: 479px) {
+  .customers {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .customers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .customers-title {
+    margin-bottom: 30px;
+    color: #212121;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .customers-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.customer-list__item {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .customer-list__item {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  .customer-list__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .customer-list__item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customer-list__item:nth-child(1n + 1) {
+    margin-right: 30px;
+  }
+  .customer-list__item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .customer-list__item:nth-child(n + 4) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customer-list__item {
+    margin-bottom: 0;
+  }
+  .customer-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.customer-list__link {
+  display: block;
+  width: 210px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  text-align: center;
+  color: #afb1b8;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .customer-list__link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customer-list__link {
+    width: 170px;
+  }
+}
+
+.customer-list__link:hover, .customer-list__link:focus {
+  border-color: #2196f3;
+}
+
+.customer-list__logo {
+  fill: currentColor;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customer-list__link:hover .customer-list__logo,
+.customer-list__link:focus .customer-list__logo {
+  fill: #2196f3;
+}
+
+.logo-yaco {
+  padding: 20px 63px;
+}
+
+.logo-tagcompany {
+  padding: 19px 65px;
+}
+
+.logo-company {
+  padding: 24px 64px;
+}
+
+.logo-foster {
+  padding: 24px 45px;
+}
+
+.logo-brand {
+  padding: 22px 55px;
+}
+
+.logo-companytag {
+  padding: 22px 40px;
 }
 /*# sourceMappingURL=main.css.map */
