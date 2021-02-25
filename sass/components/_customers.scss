@@ -70,7 +70,7 @@
 
 .customer-list__link {
   display: block;
-  width: 210px;
+
   height: 90px;
   border: 1px solid $socialLinkColor;
   border-radius: 4px;
@@ -79,6 +79,10 @@
   color: $socialLinkColor;
 
   transition: background-color 250ms $cubicBezier;
+
+  @media screen and (min-width: 480px) {
+    width: 210px;
+  }
   @media screen and (min-width: 768px) {
     width: 226px;
   }

@@ -1,0 +1,133 @@
+.footer {
+  background-color: $bgColorFooter;
+}
+.footer-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.footer-logo {
+  @extend %logo;
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+
+  color: $whiteColor;
+}
+.footer-address {
+  margin-bottom: 60px;
+  @include fontProperty($color: $whiteColor, $height: 1.71);
+  font-style: normal;
+  text-align: center;
+}
+.footer-address__address {
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+.footer-address__link {
+  display: block;
+  margin-bottom: 9px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-appeal {
+  margin-bottom: 60px;
+}
+.footer-appeal__appeal {
+  display: block;
+  margin-bottom: 20px;
+  @include fontProperty(
+    $color: $whiteColor,
+    $weight: 700,
+    $transform: uppercase
+  );
+  text-align: center;
+}
+.footer-social {
+  display: flex;
+  justify-content: center;
+}
+.footer-social__item {
+  margin-right: 10px;
+}
+.footer-social__link {
+  display: block;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: $whiteColor;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms $cubicBezier;
+
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+  }
+}
+.footer-social__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.footer-form {
+  text-align: center;
+}
+.footer-field {
+  display: block;
+}
+.footer-field__label {
+  display: block;
+  margin-bottom: 20px;
+  @include fontProperty(
+    $color: $whiteColor,
+    $weight: 700,
+    $transform: uppercase
+  );
+  font-style: normal;
+}
+.footer-field__input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 15px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: $bgColorFooter;
+  @include fontProperty(
+    $color: rgba(255, 255, 255, 0.6),
+    $size: 16px,
+    $height: 1.25
+  );
+  text-align: start;
+  &:focus {
+    outline: none;
+    border-color: $accentColor;
+  }
+  &:invalid {
+    outline: none;
+    border-color: red;
+  }
+}
+.footer-button {
+  display: flex;
+  padding-top: 10px;
+  padding-right: 62px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+}
+.footer-button__icon {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
