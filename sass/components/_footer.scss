@@ -8,6 +8,28 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+.footer-desc {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+.footer-info {
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 .footer-logo {
   @extend %logo;
@@ -16,25 +38,40 @@
   margin-bottom: 20px;
 
   color: $whiteColor;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 .footer-address {
   margin-bottom: 60px;
   @include fontProperty($color: $whiteColor, $height: 1.71);
   font-style: normal;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 .footer-address__address {
   margin-top: 0;
   margin-bottom: 9px;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 .footer-address__link {
   display: block;
   margin-bottom: 9px;
   text-align: center;
   color: rgba(255, 255, 255, 0.6);
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 .footer-appeal {
   margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 .footer-appeal__appeal {
   display: block;
@@ -45,12 +82,16 @@
     $transform: uppercase
   );
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 .footer-social {
   display: flex;
   justify-content: center;
 }
-.footer-social__item {
+
+.footer-social__item:not(:last-child) {
   margin-right: 10px;
 }
 .footer-social__link {
@@ -78,6 +119,11 @@
 
 .footer-form {
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-end;
+    text-align: start;
+  }
 }
 .footer-field {
   display: block;
@@ -117,13 +163,26 @@
     outline: none;
     border-color: red;
   }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 .footer-button {
   display: flex;
   padding-top: 10px;
-  padding-right: 62px;
+
   padding-bottom: 10px;
   padding-left: 29px;
+
+  width: 200px;
+  height: 50px;
+
+  font-size: 16px;
 }
 .footer-button__icon {
   margin-left: 10px;
