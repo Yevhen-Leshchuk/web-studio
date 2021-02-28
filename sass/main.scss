@@ -7,9 +7,10 @@
 @import './components/body';
 @import './components/container';
 @import './components/header';
-@import './components/offer';
-@import './components/feature';
-@import './components/work';
-@import './components/team';
-@import './components/customers';
+@import './components/index/offer';
+@import './components/index/feature';
+@import './components/index/work';
+@import './components/index/team';
+@import './components/index/customers';
 @import './components/footer';
+@import './components/portfolio/portfolio';
