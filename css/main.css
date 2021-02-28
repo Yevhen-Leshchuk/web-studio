@@ -2402,12 +2402,6 @@ body.modal-open {
   text-transform: none;
 }
 
-@media screen and (min-width: 768px) {
-  .portfolio-content__title {
-    min-width: 316px;
-  }
-}
-
 .portfolio-content__desc {
   margin: 0;
   color: #757575;
