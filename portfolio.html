@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+      content="Веб студия, десктопные приложения, мобильные приложения, дизайнерские решения веб-сайты, маркетинг " />
     <title>Document</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -60,11 +62,11 @@
         <div class="portfolio-section container">
           <h1 class="visually-hidden">portfolio</h1>
             <div class="portfolio-button">
-            <button class="portfolio-button__button" type="button">Все</button>
-            <button class="portfolio-button__button" type="button">Веб-сайты</button>
-            <button class="portfolio-button__button" type="button">Приложения</button>
-            <button class="portfolio-button__button" type="button">Дизайн</button>
-            <button class="portfolio-button__button" type="button">Маркетинг</button>
+            <button class="portfolio-button__button" type="button" aria-label="Кнопка Все">Все</button>
+            <button class="portfolio-button__button" type="button" aria-label="Кнопка Веб-сайты">Веб-сайты</button>
+            <button class="portfolio-button__button" type="button" aria-label="Кнопка Приложения">Приложения</button>
+            <button class="portfolio-button__button" type="button" aria-label="Кнопка Дизайн">Дизайн</button>
+            <button class="portfolio-button__button" type="button" aria-label="Кнопка Маркетинг">Маркетинг</button>
           </div>
         <ul class="portfolio-list">
           <li class="portfolio-list__card">
@@ -340,28 +342,28 @@
             <ul class="footer-social">
               <li class="footer-social__item">
                 <a href="https://www.instagram.com" class="footer-social__link">
-                  <svg class="footer-social__icon">
+                  <svg class="footer-social__icon" aria-label="Ссылка на instagram">
                     <use href="./images/sprite/sprite.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-social__item">
                 <a href="https://twitter.com" class="footer-social__link">
-                  <svg class="footer-social__icon">
+                  <svg class="footer-social__icon" aria-label="Ссылка на twitter">
                     <use href="./images/sprite/sprite.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-social__item">
                 <a href="https://www.facebook.com" class="footer-social__link">
-                  <svg class="footer-social__icon">
+                  <svg class="footer-social__icon" aria-label="Ссылка на facebook">
                     <use href="./images/sprite/sprite.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-social__item">
                 <a href="https://www.linkedin.com" class="footer-social__link">
-                  <svg class="footer-social__icon">
+                  <svg class="footer-social__icon" aria-label="Ссылка на linkedin">
                     <use href="./images/sprite/sprite.svg#linkedin"></use>
                   </svg>
                 </a>
@@ -372,10 +374,11 @@
         <form class="footer-form" name="subscription" autocomplete="off">
           <label class="footer-field">
             <span class="footer-field__label">Подпишитесь на рассылку</span>
-            <input class="footer-field__input" type="email" name="mail" placeholder="E-mail">
+            <input class="footer-field__input" type="email" name="mail" placeholder="E-mail"
+              aria-label="Электронная почта">
           </label>
           <button class="button footer-button" type="submit" value="submit">Подписаться
-            <svg class="footer-button__icon">
+            <svg class="footer-button__icon" aria-label="Отправить электронную почту">
               <use href="./images/sprite/sprite.svg#send"></use>
             </svg>
           </button>
