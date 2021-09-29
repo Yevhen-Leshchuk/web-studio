@@ -303,11 +303,11 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     display: none;
     background-color: $whiteColor;
     text-align: center;
-    padding: 48px 40px;
+    padding: 40px 40px 20px;
   }
   &.is-open {
     display: block;
@@ -316,8 +316,9 @@
 }
 .header-menu {
   @media screen and (max-width: 767px) {
+    position: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
   }
 }
 .header-menu {
@@ -348,6 +349,12 @@
 
   &.is-open .icon-menu {
     display: none;
+  }
+
+  &.menu-button--close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
 
   @media screen and (min-width: 768px) {
@@ -412,7 +419,7 @@
   @include fontProperty(
     $color: $primaryColor,
     $weight: 500,
-    $size: 18px,
+    $size: 20px,
     $height: 1.2,
     $spacing: 0.02em
   );

@@ -1,14 +1,32 @@
-(() => {
-  const menuBtnRef = document.querySelector("[data-menu-button]");
-  const mobileMenuRef = document.querySelector("[data-menu]");
+'use strict';
 
-  menuBtnRef.addEventListener("click", () => {
-    const expanded =
-      menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+const menuBtnOpen = document.querySelector('[data-menu-button-open]');
+const menuBtnClose = document.querySelector('[data-menu-button-close]');
+const mobileMenuRef = document.querySelector('[data-menu]');
 
-    menuBtnRef.classList.toggle("is-open");
-    menuBtnRef.setAttribute("aria-expanded", !expanded);
+menuBtnOpen.addEventListener('click', onOpenMenu);
+menuBtnClose.addEventListener('click', onCloseMenu);
 
-    mobileMenuRef.classList.toggle("is-open");
-  });
-})();
+function onOpenMenu(event) {
+  event.preventDefault();
+
+  // menuBtnOpen.classList.add("is-open");
+  // mobileMenuRef.classList.add("is-open");
+  // menuBtnClose.classList.add("is-open");
+
+  menuBtnOpen.classList.toggle('is-open');
+  mobileMenuRef.classList.toggle('is-open'); // toggle добавляет класс если его нет и удаляет если он есть
+  menuBtnClose.classList.toggle('is-open');
+}
+
+function onCloseMenu() {
+  // menuBtnOpen.classList.remove("is-open");
+  // mobileMenuRef.classList.remove("is-open");
+  // menuBtnClose.classList.remove("is-open");
+
+  menuBtnOpen.classList.toggle('is-open');
+  mobileMenuRef.classList.toggle('is-open'); // toggle добавляет класс если его нет и удаляет если он есть
+  menuBtnClose.classList.toggle('is-open');
+}
+
+export { onOpenMenu, onCloseMenu };

@@ -1,3 +1,25 @@
+@media (max-width: 830px) and (orientation: landscape) {
+  .is-hidden {
+    display: none;
+  }
+}
+
+.is-landscape {
+  @media (max-width: 830px) and (orientation: landscape) {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    height: 360px;
+    text-align: center;
+    background-color: $whiteColor;
+    background-image: url(..//..//../images/offer/phone.svg);
+    background-repeat: no-repeat;
+    z-index: 100;
+  }
+}
+
 .offer {
   margin: auto;
   padding-top: 50px;
@@ -83,6 +105,11 @@
     $height: 1.88,
     $spacing: 0.06em
   );
+
+  &--disabled {
+    background-color: $socialLinkColor;
+    border-color: $socialLinkColor;
+  }
 }
 // modal
 .backdrop {
@@ -106,11 +133,13 @@
     opacity: 0;
     pointer-events: none;
   }
-  @media screen and (min-width: 1200px) {
+
+  @media screen and (min-width: 480px) {
     padding: 0;
   }
 }
 .modal {
+  position: relative;
   padding: 15px;
 
   background-color: $whiteColor;
@@ -126,7 +155,7 @@
 .modal {
   @media screen and (min-width: 480px) {
     position: absolute;
-    top: 49%;
+    top: 50%;
     left: 50%;
     padding: 40px;
     max-width: 450px;
@@ -148,15 +177,15 @@
   background-color: $whiteColor;
   cursor: pointer;
 
-  @media screen and (min-width: 480px) {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-  }
+  // @media screen and (min-width: 480px) {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  //}
 }
 .modal-button__icon {
-  width: 11px;
-  height: 11px;
+  width: 13px;
+  height: 13px;
 
   fill: #000000;
 
@@ -170,6 +199,7 @@
 // form
 .form-appeal {
   display: inline-block;
+  margin-top: 30px;
   margin-bottom: 10px;
 
   @include fontProperty(
@@ -180,6 +210,7 @@
   );
   text-align: center;
   @media screen and (min-width: 480px) {
+    margin-top: 0;
     margin-bottom: 30px;
   }
 }
