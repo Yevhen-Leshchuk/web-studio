@@ -172,6 +172,13 @@
     margin-bottom: 0;
   }
 }
+ .no-input {
+    border: 1px solid #D20712;
+  }
+.active::placeholder {
+    color:#D20712;
+  }
+
 .footer-button {
   display: flex;
   padding-top: 10px;
