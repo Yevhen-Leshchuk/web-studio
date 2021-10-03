@@ -300,13 +300,6 @@
   }
 }
 
-.change-icon_color {
-  transition: fill 250ms $cubicBezier;
-  .form-field__input:focus ~ & {
-    fill: $accentColor;
-  }
-}
-
 .form-field__icon-no-input {
   fill:#D20712;
 }

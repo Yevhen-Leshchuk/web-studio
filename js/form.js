@@ -15,31 +15,50 @@ const refs = {
   footerFormRef: document.querySelector('.footer-form'),
 };
 
-//----------------modal-form
+//----------------------modal-form----------------------------------
 refs.modalFormRef.addEventListener('submit', onSubmitForm);
 refs.checkBoxRef.addEventListener('change', onChangeCheckBox);
+refs.modalFormRef.addEventListener('input', handleInputModal);
+
+function handleInputModal(e) {
+  e.preventDefault();
+  const formRef = e.target.value;
+
+  if (formRef) {
+    refs.modalInputNameRef.classList.remove('active', 'no-input');
+    refs.modalInputIconNameRef.classList.remove('form-field__icon-no-input');
+
+    refs.modalInputTelRef.classList.remove('active', 'no-input');
+    refs.modalInputIconTelRef.classList.remove('form-field__icon-no-input');
+
+    refs.modalInputMailRef.classList.remove('active', 'no-input');
+    refs.modalInputIconMailRef.classList.remove('form-field__icon-no-input');
+  }
+}
 
 function onSubmitForm(event) {
   event.preventDefault();
-  console.log(event);
+
   const formRef = event.target;
   const formData = new FormData(formRef);
-
+  const inputName = event.target.name.value;
+  const inputTel = event.target.tel.value;
+  const inputMail = event.target.mail.value;
   const submittedData = {};
 
   formData.forEach((value, key) => {
     submittedData[key] = value;
   });
 
-  refs.submitBtnRef.disabled = true;
-  refs.submitBtnRef.classList.add('button--disabled');
-
-  const { name, tel, mail } = submittedData;
-
   console.log(submittedData);
 
   checkInput(submittedData);
-  formRef.reset();
+
+  if (inputName && inputTel && inputMail) {
+    formRef.reset();
+    refs.submitBtnRef.disabled = true;
+    refs.submitBtnRef.classList.add('button--disabled');
+  }
 }
 
 function onChangeCheckBox(event) {
@@ -57,17 +76,17 @@ function onChangeCheckBox(event) {
 function checkInput({ name, tel, mail }) {
   switch (true) {
     case name === '' && tel === '' && mail === '':
-      refs.modalInputNameRef.placeholder = 'Введите данные!';
+      refs.modalInputNameRef.placeholder = 'Введите имя!';
       refs.modalInputNameRef.classList.add('active', 'no-input');
       refs.modalLabelNameRef.classList.add('label-hidden');
       refs.modalInputIconNameRef.classList.add('form-field__icon-no-input');
 
-      refs.modalInputTelRef.placeholder = 'Введите данные!';
+      refs.modalInputTelRef.placeholder = 'Введите номер телефона!';
       refs.modalInputTelRef.classList.add('active', 'no-input');
       refs.modalLabelTelRef.classList.add('label-hidden');
       refs.modalInputIconTelRef.classList.add('form-field__icon-no-input');
 
-      refs.modalInputMailRef.placeholder = 'Введите данные!';
+      refs.modalInputMailRef.placeholder = 'Введите email!';
       refs.modalInputMailRef.classList.add('active', 'no-input');
       refs.modalLabelMailRef.classList.add('label-hidden');
       refs.modalInputIconMailRef.classList.add('form-field__icon-no-input');
@@ -76,7 +95,7 @@ function checkInput({ name, tel, mail }) {
     case name === '':
       {
         // console.log('name');
-        refs.modalInputNameRef.placeholder = 'Введите данные!';
+        refs.modalInputNameRef.placeholder = 'Введите имя!';
         refs.modalInputNameRef.classList.add('active', 'no-input');
         refs.modalLabelNameRef.classList.add('label-hidden');
         refs.modalInputIconNameRef.classList.add('form-field__icon-no-input');
@@ -85,7 +104,7 @@ function checkInput({ name, tel, mail }) {
       break;
     case tel === '':
       // console.log('tel');
-      refs.modalInputTelRef.placeholder = 'Введите данные!';
+      refs.modalInputTelRef.placeholder = 'Введите номер телефона!';
       refs.modalInputTelRef.classList.add('active', 'no-input');
       refs.modalLabelTelRef.classList.add('label-hidden');
       refs.modalInputIconTelRef.classList.add('form-field__icon-no-input');
@@ -93,7 +112,7 @@ function checkInput({ name, tel, mail }) {
       break;
     case mail === '':
       // console.log('mail');
-      refs.modalInputMailRef.placeholder = 'Введите данные!';
+      refs.modalInputMailRef.placeholder = 'Введите email!';
       refs.modalInputMailRef.classList.add('active', 'no-input');
       refs.modalLabelMailRef.classList.add('label-hidden');
       refs.modalInputIconMailRef.classList.add('form-field__icon-no-input');
@@ -119,15 +138,25 @@ function checkInput({ name, tel, mail }) {
   }
 }
 
-//-------------footer-form
+//----------------------footer-form--------------------------------------
 
 refs.footerFormRef.addEventListener('submit', onSubmitFooterForm);
+refs.footerFormRef.addEventListener('input', handleInputFooter);
+
+function handleInputFooter(e) {
+  e.preventDefault();
+  const formRef = e.target.value;
+  console.log(formRef);
+  if (formRef) {
+    refs.footerInputRef.classList.remove('active', 'no-input');
+  }
+}
 
 function onSubmitFooterForm(event) {
   event.preventDefault();
 
   if (!event.target.elements.mail.value) {
-    refs.footerInputRef.placeholder = 'Введите данные!';
+    refs.footerInputRef.placeholder = 'Введите email!';
     refs.footerInputRef.classList.add('active', 'no-input');
   } else {
     refs.footerInputRef.placeholder = 'E-mail';
