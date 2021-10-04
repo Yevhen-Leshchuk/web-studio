@@ -35,10 +35,12 @@
     screen and (min-resolution: 2dppx) {
     background-image: url(..//..//../images/offer/offer-mobile2x.jpg);
   }
+
   @media screen and (min-width: 480px) {
     padding-top: 118px;
     padding-bottom: 118px;
   }
+
   @media screen and (min-width: 768px) {
     background-image: url(..//..//../images/offer/offer-tablet-768.jpg);
     @media screen and (min-device-pixel-ratio: 2),
@@ -47,6 +49,7 @@
       background-image: url(..//..//../images/offer/offer-tablet2x.jpg);
     }
   }
+
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -58,6 +61,7 @@
     }
   }
 }
+
 .offer__title {
   display: block;
   margin-bottom: 30px;
@@ -87,6 +91,7 @@
     line-height: 1.36;
   }
 }
+
 .button {
   margin-right: auto;
   margin-left: auto;
@@ -111,6 +116,7 @@
     border-color: $socialLinkColor;
   }
 }
+
 // modal
 .backdrop {
   position: fixed;
@@ -138,6 +144,7 @@
     padding: 0;
   }
 }
+
 .modal {
   position: relative;
   padding: 15px;
@@ -152,6 +159,7 @@
     transform: translate(-50%, -50%) scale(0.8);
   }
 }
+
 .modal {
   @media screen and (min-width: 480px) {
     position: absolute;
@@ -166,6 +174,7 @@
     max-width: 528px;
   }
 }
+
 .modal-button {
   margin-bottom: 10px;
   width: 30px;
@@ -177,12 +186,11 @@
   background-color: $whiteColor;
   cursor: pointer;
 
-  // @media screen and (min-width: 480px) {
   position: absolute;
   top: 8px;
   right: 8px;
-  //}
 }
+
 .modal-button__icon {
   width: 13px;
   height: 13px;
@@ -196,6 +204,7 @@
     fill: $accentColor;
   }
 }
+
 // form
 .form-appeal {
   display: inline-block;
@@ -214,6 +223,7 @@
     margin-bottom: 30px;
   }
 }
+
 .form-field {
   display: block;
   position: relative;
@@ -234,27 +244,31 @@
     outline: none;
     border-color: $accentColor;
   }
+
   &:invalid {
     outline: none;
     border-color: red;
   }
+
   @media screen and (min-width: 480px) {
     width: 370px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 448px;
   }
 }
+
 .change-input_color {
     outline: none;
     border-color: $accentColor;
 }
 
- .no-input {
+ .form-field__input--no-input {
     border: 1px solid #D20712;
   }
 
- .active::placeholder {
+ .form-field__input--active::placeholder {
     color:#D20712;
   }
 
@@ -279,7 +293,7 @@
   }
 }
 
-.label-hidden{
+.form-field__label--hidden {
   transform: translate(-42px, -35px);
 }
 
@@ -300,7 +314,7 @@
   }
 }
 
-.form-field__icon-no-input {
+.form-field__icon--no-input {
   fill:#D20712;
 }
 

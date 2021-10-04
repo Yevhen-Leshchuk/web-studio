@@ -1,8 +1,8 @@
 const refs = {
   modalFormRef: document.querySelector('.js-speaker-form'),
-  modalInputNameRef: document.querySelector('.name'),
-  modalInputTelRef: document.querySelector('.tel'),
-  modalInputMailRef: document.querySelector('.mail'),
+  modalInputNameRef: document.querySelector('.js-input__name'),
+  modalInputTelRef: document.querySelector('.js-input__tel'),
+  modalInputMailRef: document.querySelector('.js-input__mail'),
   modalLabelNameRef: document.querySelector('.form-field__label--name'),
   modalLabelTelRef: document.querySelector('.form-field__label--tel'),
   modalLabelMailRef: document.querySelector('.form-field__label--mail'),
@@ -16,6 +16,7 @@ const refs = {
 };
 
 //----------------------modal-form----------------------------------
+
 refs.modalFormRef.addEventListener('submit', onSubmitForm);
 refs.checkBoxRef.addEventListener('change', onChangeCheckBox);
 refs.modalFormRef.addEventListener('input', handleInputModal);
@@ -25,14 +26,14 @@ function handleInputModal(e) {
   const formRef = e.target.value;
 
   if (formRef) {
-    refs.modalInputNameRef.classList.remove('active', 'no-input');
-    refs.modalInputIconNameRef.classList.remove('form-field__icon-no-input');
+    refs.modalInputNameRef.classList.remove('.form-field__input--no-input');
+    refs.modalInputIconNameRef.classList.remove('form-field__icon--no-input');
 
-    refs.modalInputTelRef.classList.remove('active', 'no-input');
-    refs.modalInputIconTelRef.classList.remove('form-field__icon-no-input');
+    refs.modalInputTelRef.classList.remove('.form-field__input--no-input');
+    refs.modalInputIconTelRef.classList.remove('form-field__icon--no-input');
 
-    refs.modalInputMailRef.classList.remove('active', 'no-input');
-    refs.modalInputIconMailRef.classList.remove('form-field__icon-no-input');
+    refs.modalInputMailRef.classList.remove('.form-field__input--no-input');
+    refs.modalInputIconMailRef.classList.remove('form-field__icon--no-input');
   }
 }
 
@@ -77,64 +78,91 @@ function checkInput({ name, tel, mail }) {
   switch (true) {
     case name === '' && tel === '' && mail === '':
       refs.modalInputNameRef.placeholder = 'Введите имя!';
-      refs.modalInputNameRef.classList.add('active', 'no-input');
-      refs.modalLabelNameRef.classList.add('label-hidden');
-      refs.modalInputIconNameRef.classList.add('form-field__icon-no-input');
+      refs.modalInputNameRef.classList.add(
+        'form-field__input--active',
+        '.form-field__input--no-input',
+      );
+      refs.modalLabelNameRef.classList.add('form-field__label--hidden');
+      refs.modalInputIconNameRef.classList.add('form-field__icon--no-input');
 
       refs.modalInputTelRef.placeholder = 'Введите номер телефона!';
-      refs.modalInputTelRef.classList.add('active', 'no-input');
-      refs.modalLabelTelRef.classList.add('label-hidden');
-      refs.modalInputIconTelRef.classList.add('form-field__icon-no-input');
+      refs.modalInputTelRef.classList.add(
+        'form-field__input--active',
+        '.form-field__input--no-input',
+      );
+      refs.modalLabelTelRef.classList.add('form-field__label--hidden');
+      refs.modalInputIconTelRef.classList.add('form-field__icon--no-input');
 
       refs.modalInputMailRef.placeholder = 'Введите email!';
-      refs.modalInputMailRef.classList.add('active', 'no-input');
-      refs.modalLabelMailRef.classList.add('label-hidden');
-      refs.modalInputIconMailRef.classList.add('form-field__icon-no-input');
+      refs.modalInputMailRef.classList.add(
+        'form-field__input--active',
+        '.form-field__input--no-input',
+      );
+      refs.modalLabelMailRef.classList.add('form-field__label--hidden');
+      refs.modalInputIconMailRef.classList.add('form-field__icon--no-input');
 
       break;
     case name === '':
       {
         // console.log('name');
         refs.modalInputNameRef.placeholder = 'Введите имя!';
-        refs.modalInputNameRef.classList.add('active', 'no-input');
-        refs.modalLabelNameRef.classList.add('label-hidden');
-        refs.modalInputIconNameRef.classList.add('form-field__icon-no-input');
+        refs.modalInputNameRef.classList.add(
+          'form-field__input--active',
+          '.form-field__input--no-input',
+        );
+        refs.modalLabelNameRef.classList.add('form-field__label--hidden');
+        refs.modalInputIconNameRef.classList.add('form-field__icon--no-input');
       }
 
       break;
     case tel === '':
       // console.log('tel');
       refs.modalInputTelRef.placeholder = 'Введите номер телефона!';
-      refs.modalInputTelRef.classList.add('active', 'no-input');
-      refs.modalLabelTelRef.classList.add('label-hidden');
-      refs.modalInputIconTelRef.classList.add('form-field__icon-no-input');
+      refs.modalInputTelRef.classList.add(
+        'form-field__input--active',
+        '.form-field__input--no-input',
+      );
+      refs.modalLabelTelRef.classList.add('form-field__label--hidden');
+      refs.modalInputIconTelRef.classList.add('form-field__icon--no-input');
 
       break;
     case mail === '':
       // console.log('mail');
       refs.modalInputMailRef.placeholder = 'Введите email!';
-      refs.modalInputMailRef.classList.add('active', 'no-input');
-      refs.modalLabelMailRef.classList.add('label-hidden');
-      refs.modalInputIconMailRef.classList.add('form-field__icon-no-input');
+      refs.modalInputMailRef.classList.add(
+        'form-field__input--active',
+        '.form-field__input--no-input',
+      );
+      refs.modalLabelMailRef.classList.add('form-field__label--hidden');
+      refs.modalInputIconMailRef.classList.add('form-field__icon--no-input');
 
       break;
 
     default:
       // console.log('Default');
       refs.modalInputNameRef.placeholder = ' ';
-      refs.modalInputNameRef.classList.remove('active', 'no-input');
-      refs.modalLabelNameRef.classList.remove('label-hidden');
-      refs.modalInputIconNameRef.classList.remove('form-field__icon-no-input');
+      refs.modalInputNameRef.classList.remove(
+        'form-field__input--active',
+        '.form-field__input--no-input',
+      );
+      refs.modalLabelNameRef.classList.remove('form-field__label--hidden');
+      refs.modalInputIconNameRef.classList.remove('form-field__icon--no-input');
 
       refs.modalInputTelRef.placeholder = ' ';
-      refs.modalInputTelRef.classList.remove('active', 'no-input');
-      refs.modalLabelTelRef.classList.remove('label-hidden');
-      refs.modalInputIconTelRef.classList.remove('form-field__icon-no-input');
+      refs.modalInputTelRef.classList.remove(
+        'form-field__input--active',
+        '.form-field__input--no-input',
+      );
+      refs.modalLabelTelRef.classList.remove('form-field__label--hidden');
+      refs.modalInputIconTelRef.classList.remove('form-field__icon--no-input');
 
       refs.modalInputMailRef.placeholder = ' ';
-      refs.modalInputMailRef.classList.remove('active', 'no-input');
-      refs.modalLabelMailRef.classList.remove('label-hidden');
-      refs.modalInputIconMailRef.classList.remove('form-field__icon-no-input');
+      refs.modalInputMailRef.classList.remove(
+        'form-field__input--active',
+        '.form-field__input--no-input',
+      );
+      refs.modalLabelMailRef.classList.remove('form-field__label--hidden');
+      refs.modalInputIconMailRef.classList.remove('form-field__icon--no-input');
   }
 }
 
@@ -146,9 +174,11 @@ refs.footerFormRef.addEventListener('input', handleInputFooter);
 function handleInputFooter(e) {
   e.preventDefault();
   const formRef = e.target.value;
-  console.log(formRef);
   if (formRef) {
-    refs.footerInputRef.classList.remove('active', 'no-input');
+    refs.footerInputRef.classList.remove(
+      'footer-field__input--active',
+      'footer-field__input--no-input',
+    );
   }
 }
 
@@ -157,10 +187,16 @@ function onSubmitFooterForm(event) {
 
   if (!event.target.elements.mail.value) {
     refs.footerInputRef.placeholder = 'Введите email!';
-    refs.footerInputRef.classList.add('active', 'no-input');
+    refs.footerInputRef.classList.add(
+      'footer-field__input--active',
+      'footer-field__input--no-input',
+    );
   } else {
     refs.footerInputRef.placeholder = 'E-mail';
-    refs.footerInputRef.classList.remove('active', 'no-input');
+    refs.footerInputRef.classList.remove(
+      'footer-field__input--active',
+      'footer-field__input--no-input',
+    );
   }
 
   const formRef = event.target;

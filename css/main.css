@@ -1277,23 +1277,23 @@ body.modal-open {
   border-color: #2196f3;
 }
 
-.no-input {
+.form-field__input--no-input {
   border: 1px solid #D20712;
 }
 
-.active::-webkit-input-placeholder {
+.form-field__input--active::-webkit-input-placeholder {
   color: #D20712;
 }
 
-.active:-ms-input-placeholder {
+.form-field__input--active:-ms-input-placeholder {
   color: #D20712;
 }
 
-.active::-ms-input-placeholder {
+.form-field__input--active::-ms-input-placeholder {
   color: #D20712;
 }
 
-.active::placeholder {
+.form-field__input--active::placeholder {
   color: #D20712;
 }
 
@@ -1321,7 +1321,7 @@ body.modal-open {
           transform: translate(-42px, -35px);
 }
 
-.label-hidden {
+.form-field__label--hidden {
   -webkit-transform: translate(-42px, -35px);
           transform: translate(-42px, -35px);
 }
@@ -1343,7 +1343,7 @@ body.modal-open {
   fill: #2196f3;
 }
 
-.form-field__icon-no-input {
+.form-field__icon--no-input {
   fill: #D20712;
 }
 
@@ -2309,23 +2309,23 @@ body.modal-open {
   }
 }
 
-.no-input {
+.footer-field__input--no-input {
   border: 1px solid #D20712;
 }
 
-.active::-webkit-input-placeholder {
+.footer-field__input--active::-webkit-input-placeholder {
   color: #D20712;
 }
 
-.active:-ms-input-placeholder {
+.footer-field__input--active:-ms-input-placeholder {
   color: #D20712;
 }
 
-.active::-ms-input-placeholder {
+.footer-field__input--active::-ms-input-placeholder {
   color: #D20712;
 }
 
-.active::placeholder {
+.footer-field__input--active::placeholder {
   color: #D20712;
 }
 

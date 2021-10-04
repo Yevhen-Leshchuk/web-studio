@@ -13,18 +13,21 @@
 <body>
   <!--header-->
   <header class="header">
-    <!--main-navigation-->
+    <!-- main-navigation-->
     <div class="container">
       <nav class="main-nav">
         <a class="logo" lang="en" href="/"><span class="logo__accent">Web</span>Studio</a>
-        <button type="button" class="menu-button" aria-expanded="false" aria-controls="header-menu" data-menu-button>
+        <button type="button" class="menu-button menu-button--open" aria-expanded="false" aria-controls="header-menu" data-menu-button-open>
           <svg width="20" height="20" aria-label="Переключатель мобильного меню">
             <use class="icon-menu" href="./images/sprite/sprite.svg#menu"></use>
-            <use class="icon-cross" href="./images/sprite/sprite.svg#cross"></use>
-
           </svg>
         </button>
         <div class="header-menu" id="header-menu" data-menu>
+          <button type="button" class="menu-button menu-button--close" aria-expanded="false" aria-controls="header-menu" data-menu-button-close>
+            <svg width="20" height="20" aria-label="Переключатель мобильного меню">
+              <use class="icon-cross" href="./images/sprite/sprite.svg#cross"></use>
+            </svg>
+          </button>
           <ul class="site-nav">
             <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Студия</a></li>
             <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="#">Портфолио</a></li>
@@ -41,11 +44,11 @@
                 </svg>+38 096 111 11 11</a></li>
           </ul>
           <ul class="header-social">
-            <li class="header-social__items"><a href="#https://www.instagram.com" class="header-social__link">Instagram</a></li>
-            <li class="header-social__items"><a href="#https://twitter.com" class="header-social__link">Twitter</a></li>
-            <li class="header-social__items"><a href="#https://www.facebook.com" class="header-social__link">Facebook</a>
+            <li class="header-social__items"><a href="https://www.instagram.com" class="header-social__link">Instagram</a></li>
+            <li class="header-social__items"><a href="https://twitter.com" class="header-social__link">Twitter</a></li>
+            <li class="header-social__items"><a href="https://www.facebook.com" class="header-social__link">Facebook</a>
             </li>
-            <li class="header-social__items"><a href="#https://www.linkedin.com" class="header-social__link">LinkedIn</a>
+            <li class="header-social__items"><a href="https://www.linkedin.com" class="header-social__link">LinkedIn</a>
             </li>
           </ul>
         </div>
@@ -336,7 +339,7 @@
       </form>
     </div>
   </footer>
-  <script src="./js/index.js" type="module"></script>
+  <script src="./js/portfolio-page/portfolio.js" type="module"></script>
 </body>
 
 </html>

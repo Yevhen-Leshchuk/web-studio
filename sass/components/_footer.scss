@@ -172,10 +172,10 @@
     margin-bottom: 0;
   }
 }
- .no-input {
+ .footer-field__input--no-input {
     border: 1px solid #D20712;
   }
-.active::placeholder {
+.footer-field__input--active::placeholder {
     color:#D20712;
   }
 
