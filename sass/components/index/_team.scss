@@ -1,23 +1,28 @@
 .team {
   background-color: $bgColorBlock;
 }
+
 .team-section {
   @media screen and (max-width: 479px) {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+
   @media screen and (min-width: 480px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
+
 .section-title {
   @extend %section-title;
 }
+
 .team-title {
   @media screen and (max-width: 1199px) {
     margin-bottom: 30px;
@@ -30,8 +35,10 @@
     letter-spacing: 0.03em;
   }
 }
+
 .team-list {
   padding: 0;
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -47,6 +54,7 @@
   &:nth-child(4n) {
     margin-bottom: 0;
   }
+
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 2 - 30px);
 
@@ -60,11 +68,14 @@
       margin-bottom: 0;
     }
   }
+
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 4 - 30px);
+
     &:not(:last-child) {
       margin-right: 30px;
     }
+
     margin-bottom: 0;
   }
 }
@@ -84,6 +95,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
 .team-content__title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -106,16 +118,20 @@
 }
 .team-social {
   display: flex;
+
   @media screen and (min-width: 480px) {
     justify-content: center;
   }
 }
+
 .team-social__item:not(:last-child) {
   margin-right: 5px;
+
   @media screen and (min-width: 480px) {
     margin-right: 10px;
   }
 }
+
 .team-social__link {
   display: block;
   padding: 12px;

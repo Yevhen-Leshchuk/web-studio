@@ -58,17 +58,17 @@
   <!--portfolio-->
   <main>
     <section class="portfolio">
-      <div class="portfolio-section container">
+      <div class="portfolio-section container" id="tabs-1">
         <h1 class="visually-hidden">portfolio</h1>
         <div class="portfolio-button" data-controls>
-          <button class="portfolio-button__button" type="button" aria-label="Кнопка Все">Все</button>
-          <button class="portfolio-button__button" type="button" aria-label="Кнопка Веб-сайты">Веб-сайты</button>
-          <button class="portfolio-button__button" type="button" aria-label="Кнопка Приложения">Приложения</button>
-          <button class="portfolio-button__button" type="button" aria-label="Кнопка Дизайн">Дизайн</button>
-          <button class="portfolio-button__button" type="button" aria-label="Кнопка Маркетинг">Маркетинг</button>
+          <button class="portfolio-button__button" data-selection="all" type="button" aria-label="Кнопка Все">Все</button>
+          <button class="portfolio-button__button" data-selection="website" type="button" aria-label="Кнопка Веб-сайты">Веб-сайты</button>
+          <button class="portfolio-button__button" data-selection="app" type="button" aria-label="Кнопка Приложения">Приложения</button>
+          <button class="portfolio-button__button" data-selection="design" type="button" aria-label="Кнопка Дизайн">Дизайн</button>
+          <button class="portfolio-button__button" data-selection="marketing" type="button" aria-label="Кнопка Маркетинг">Маркетинг</button>
         </div>
-        <ul class="portfolio-list">
-          <li class="portfolio-list__card">
+        <ul class="portfolio-list" data-panes>
+          <li class="portfolio-list__card all website">
             <a class="portfolio-list__link" href="#">
               <div class="portfolio-thumb">
                 <img class="portfolio-list__card-image" srcset="
@@ -76,12 +76,12 @@
                 ./images/portfolio/technocryk-370.jpg 370w,
                 ./images/portfolio/technocryk-450.jpg 450w,
                 ./images/portfolio/technocryk-708.jpg 708w, 
-                ./images/portfolio/technocryk-900.jpg 900w" src="./images/portfolio/technocryk-354.jpg" alt="Веб-сайты" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                ./images/portfolio/technocryk-900.jpg 900w" src="./images/portfolio/technocryk-354.jpg" alt="Веб-сайт" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
                 <div class="portfolio-list__overlay">
                   <p class="portfolio-list__text">
-                    Технокряк это современная площадка распространения коронавируса.
-                    Компании используют эту платформу для цифрового шпионажа и атак
-                    на защищённые сервера конкурентов.
+                    Сайт, или веб-сайт (от англ. website: web — «паутина, сеть» и site — «место»),
+                    также веб-узел, — одна или несколько логически связанных
+                    между собой веб-страниц.
                   </p>
                 </div>
               </div>
@@ -91,7 +91,7 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-list__card">
+          <li class="portfolio-list__card all design">
             <a class="portfolio-list__link" href="#">
               <div class="portfolio-thumb">
                 <img class="portfolio-list__card-image" srcset="
@@ -99,12 +99,12 @@
                 ./images/portfolio/poster-370.jpg 370w,
                 ./images/portfolio/poster-450.jpg 450w,
                 ./images/portfolio/poster-708.jpg 708w, 
-                ./images/portfolio/poster-900.jpg 900w" src="./images/portfolio/poster-354.jpg" alt="Веб-сайты" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                ./images/portfolio/poster-900.jpg 900w" src="./images/portfolio/poster-354.jpg" alt="Дизайн" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
                 <div class="portfolio-list__overlay">
                   <p class="portfolio-list__text">
-                    Технокряк это современная площадка распространения коронавируса.
-                    Компании используют эту платформу для цифрового шпионажа и атак
-                    на защищённые сервера конкурентов.
+                    Веб-дизайн (от англ. web design) — отрасль веб-разработки и разновидность дизайна,
+                    в задачи которой входит проектирование пользовательских веб-интерфейсов для сайтов
+                    или веб-приложений.
                   </p>
                 </div>
               </div>
@@ -114,7 +114,7 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-list__card">
+          <li class="portfolio-list__card all app">
             <a class="portfolio-list__link" href="#">
               <div class="portfolio-thumb">
                 <img class="portfolio-list__card-image" srcset="
@@ -122,13 +122,15 @@
                 ./images/portfolio/restaurant-seafood-370.jpg 370w,
                 ./images/portfolio/restaurant-seafood-450.jpg 450w,
                 ./images/portfolio/restaurant-seafood-708.jpg 708w, 
-                ./images/portfolio/restaurant-seafood-900.jpg 900w" src="./images/portfolio/restaurant-seafood-354.jpg" alt="Веб-сайты"
+                ./images/portfolio/restaurant-seafood-900.jpg 900w" src="./images/portfolio/restaurant-seafood-354.jpg" alt="Приложение"
                   sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
                 <div class="portfolio-list__overlay">
                   <p class="portfolio-list__text">
-                    Технокряк это современная площадка распространения коронавируса.
-                    Компании используют эту платформу для цифрового шпионажа и атак
-                    на защищённые сервера конкурентов.
+                    Веб-приложение — клиент-серверное приложение,
+                    в котором клиент взаимодействует с веб-сервером
+                    при помощи браузера. Логика веб-приложения распределена
+                    между сервером и клиентом, хранение данных осуществляется,
+                    преимущественно, на сервере, обмен информацией происходит по сети.
                   </p>
                 </div>
               </div>
@@ -138,7 +140,7 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-list__card">
+          <li class="portfolio-list__card all marketing">
             <a class="portfolio-list__link" href="#">
               <div class="portfolio-thumb">
                 <img class="portfolio-list__card-image" srcset="
@@ -146,12 +148,12 @@
                 ./images/portfolio/project-prime-370.jpg 370w,
                 ./images/portfolio/project-prime-450.jpg 450w,
                 ./images/portfolio/project-prime-708.jpg 708w, 
-                ./images/portfolio/project-prime-900.jpg 900w" src="./images/portfolio/project-prime-354.jpg" alt="Веб-сайты" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                ./images/portfolio/project-prime-900.jpg 900w" src="./images/portfolio/project-prime-354.jpg" alt="Маркетинг" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
                 <div class="portfolio-list__overlay">
                   <p class="portfolio-list__text">
-                    Технокряк это современная площадка распространения коронавируса.
-                    Компании используют эту платформу для цифрового шпионажа и атак
-                    на защищённые сервера конкурентов.
+                    Ма́рке́тинг(от англ. marketing «рыночная деятельность») — организационная функция
+                    и совокупность процессов создания, продвижения и предоставления продукта
+                    или услуги покупателям и управление взаимоотношениями с ними с выгодой для организации.
                   </p>
                 </div>
               </div>
@@ -161,7 +163,7 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-list__card">
+          <li class="portfolio-list__card all app">
             <a class="portfolio-list__link" href="#">
               <div class="portfolio-thumb">
                 <img class="portfolio-list__card-image" srcset="
@@ -169,12 +171,13 @@
                 ./images/portfolio/project-boxes-370.jpg 370w,
                 ./images/portfolio/project-boxes-450.jpg 450w,
                 ./images/portfolio/project-boxes-708.jpg 708w, 
-                ./images/portfolio/project-boxes-900.jpg 900w" src="./images/portfolio/project-boxes-354.jpg" alt="Веб-сайты" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                ./images/portfolio/project-boxes-900.jpg 900w" src="./images/portfolio/project-boxes-354.jpg" alt="Приложение" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
                 <div class="portfolio-list__overlay">
                   <p class="portfolio-list__text">
-                    Технокряк это современная площадка распространения коронавируса.
-                    Компании используют эту платформу для цифрового шпионажа и атак
-                    на защищённые сервера конкурентов.
+                    Одним из преимуществ такого подхода является тот факт,
+                    что клиенты не зависят от конкретной операционной системы
+                    пользователя, поэтому веб-приложения являются межплатформенными службами.
+                    Веб-приложения стали широко использоваться в конце 1990-х — начале 2000-х годов.
                   </p>
                 </div>
               </div>
@@ -184,7 +187,7 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-list__card">
+          <li class="portfolio-list__card all website">
             <a class="portfolio-list__link" href="#">
               <div class="portfolio-thumb">
                 <img class="portfolio-list__card-image" srcset="
@@ -192,12 +195,12 @@
                 ./images/portfolio/inspiration-370.jpg 370w,
                 ./images/portfolio/inspiration-450.jpg 450w,
                 ./images/portfolio/inspiration-708.jpg 708w, 
-                ./images/portfolio/inspiration-900.jpg 900w" src="./images/portfolio/inspiration-354.jpg" alt="Веб-сайты" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                ./images/portfolio/inspiration-900.jpg 900w" src="./images/portfolio/inspiration-354.jpg" alt="Веб-сайт" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
                 <div class="portfolio-list__overlay">
                   <p class="portfolio-list__text">
-                    Технокряк это современная площадка распространения коронавируса.
-                    Компании используют эту платформу для цифрового шпионажа и атак
-                    на защищённые сервера конкурентов.
+                    Обычно сайт в Интернете представляет собой массив связанных данных,
+                    имеющий уникальный адрес и воспринимаемый пользователями как единое целое.
+                    Веб-сайты называются так, потому что доступ к ним происходит по протоколу HTTP.
                   </p>
                 </div>
               </div>
@@ -207,7 +210,7 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-list__card">
+          <li class="portfolio-list__card all design">
             <a class="portfolio-list__link" href="#">
               <div class="portfolio-thumb">
                 <img class="portfolio-list__card-image" srcset="
@@ -215,12 +218,13 @@
                 ./images/portfolio/limited-edition-370.jpg 370w,
                 ./images/portfolio/limited-edition-450.jpg 450w,
                 ./images/portfolio/limited-edition-708.jpg 708w, 
-                ./images/portfolio/limited-edition-900.jpg 900w" src="./images/portfolio/limited-edition-354.jpg" alt="Веб-сайты" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                ./images/portfolio/limited-edition-900.jpg 900w" src="./images/portfolio/limited-edition-354.jpg" alt="Дизайн" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
                 <div class="portfolio-list__overlay">
                   <p class="portfolio-list__text">
-                    Технокряк это современная площадка распространения коронавируса.
-                    Компании используют эту платформу для цифрового шпионажа и атак
-                    на защищённые сервера конкурентов.
+                    Веб-дизайн — вид графического дизайна, направленный на разработку
+                    и оформление объектов информационной среды Интернета, призванный
+                    обеспечить им высокие потребительские свойства и эстетические
+                    качества.
                   </p>
                 </div>
               </div>
@@ -230,7 +234,7 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-list__card">
+          <li class="portfolio-list__card all marketing">
             <a class="portfolio-list__link" href="#">
               <div class="portfolio-thumb">
                 <img class="portfolio-list__card-image" srcset="
@@ -238,12 +242,13 @@
                 ./images/portfolio/project-lab-370.jpg 370w,
                 ./images/portfolio/project-lab-450.jpg 450w,
                 ./images/portfolio/project-lab-708.jpg 708w, 
-                ./images/portfolio/project-lab-900.jpg 900w" src="./images/portfolio/project-lab-354.jpg" alt="Веб-сайты" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                ./images/portfolio/project-lab-900.jpg 900w" src="./images/portfolio/project-lab-354.jpg" alt="Маркетинг" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
                 <div class="portfolio-list__overlay">
                   <p class="portfolio-list__text">
-                    Технокряк это современная площадка распространения коронавируса.
-                    Компании используют эту платформу для цифрового шпионажа и атак
-                    на защищённые сервера конкурентов.
+                    Более кратко, маркетинг — деятельность, направленная на
+                    удовлетворение рыночных потребностей с целью извлечения прибыли.
+                    В широком смысле предназначение маркетинга состоит в «определении и
+                    удовлетворении человеческих и общественных потребностей».
                   </p>
                 </div>
               </div>
@@ -253,7 +258,7 @@
               </div>
             </a>
           </li>
-          <li class="portfolio-list__card">
+          <li class="portfolio-list__card all app">
             <a class="portfolio-list__link" href="#">
               <div class="portfolio-thumb">
                 <img class="portfolio-list__card-image" srcset="
@@ -261,12 +266,16 @@
                 ./images/portfolio/growing-business-370.jpg 370w,
                 ./images/portfolio/growing-business-450.jpg 450w,
                 ./images/portfolio/growing-business-708.jpg 708w, 
-                ./images/portfolio/growing-business-900.jpg 900w" src="./images/portfolio/growing-business-354.jpg" alt="Веб-сайты" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                ./images/portfolio/growing-business-900.jpg 900w" src="./images/portfolio/growing-business-354.jpg" alt="Приложение"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
                 <div class="portfolio-list__overlay">
                   <p class="portfolio-list__text">
-                    Технокряк это современная площадка распространения коронавируса.
-                    Компании используют эту платформу для цифрового шпионажа и атак
-                    на защищённые сервера конкурентов.
+                    Используются подходы к архитектурному проектированию веб - приложений.
+                    Веб-приложение состоит из клиентской и серверной частей, тем самым реализуя
+                    технологию «клиент-сервер». Клиентская часть реализует пользовательский интерфейс,
+                    формирует запросы к серверу и обрабатывает ответы от него. Серверная часть получает
+                    запрос от клиента, выполняет вычисления, после этого формирует веб-страницу и отправляет
+                    её клиенту по сети с использованием протокола HTTP.
                   </p>
                 </div>
               </div>

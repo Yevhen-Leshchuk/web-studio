@@ -1,10 +1,5 @@
-const refs = {
-  openModalBtn: document.querySelector('[data-modal-open]'),
-  closeModalBtn: document.querySelector('[data-modal-close]'),
-  modal: document.querySelector('[data-modal]'),
-  htmlRef: document.querySelector('html'),
-  bodyRef: document.querySelector('body'),
-};
+import refs from './refs.js';
+import { clearStylesInputForm } from './form.js';
 
 refs.openModalBtn.addEventListener('click', onOpenModal);
 refs.closeModalBtn.addEventListener('click', onCloseModal);
@@ -30,6 +25,9 @@ function onCloseModal() {
   refs.bodyRef.classList.remove('is-hidden');
 
   window.removeEventListener('keydown', onKeyPress);
+
+  formReset();
+  clearStylesInputForm();
 }
 
 function onKeyPress(event) {
@@ -42,6 +40,11 @@ function onLightboxClick(event) {
   if (event.target === event.currentTarget) {
     onCloseModal();
   }
+}
+
+function formReset() {
+  const formRef = refs.modalFormRef;
+  formRef.reset();
 }
 
 export { onOpenModal, onCloseModal };

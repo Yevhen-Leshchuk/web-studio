@@ -3,18 +3,22 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
+
   @media screen and (min-width: 480px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
+
 .section-title {
   @extend %section-title;
 }
+
 .customers-title {
   @media screen and (max-width: 1199px) {
     margin-bottom: 30px;
@@ -27,12 +31,14 @@
     letter-spacing: 0.03em;
   }
 }
+
 .customers-list {
   @media screen and (min-width: 480px) {
     display: flex;
     flex-wrap: wrap;
   }
 }
+
 .customer-list__item {
   margin-bottom: 20px;
 
@@ -48,17 +54,21 @@
       margin-right: 0;
     }
   }
+
   @media screen and (min-width: 768px) {
     &:nth-child(1n + 1) {
       margin-right: 30px;
     }
+
     &:nth-child(3n) {
       margin-right: 0;
     }
+    
     &:nth-child(n + 4) {
       margin-bottom: 0;
     }
   }
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
 
@@ -83,17 +93,21 @@
   @media screen and (min-width: 480px) {
     width: 210px;
   }
+
   @media screen and (min-width: 768px) {
     width: 226px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 170px;
   }
+  
   &:hover,
   &:focus {
     border-color: $accentColor;
   }
 }
+
 .customer-list__logo {
   fill: currentColor;
 
@@ -104,21 +118,27 @@
     fill: $accentColor;
   }
 }
+
 .logo-yaco {
   @include paddingLogo(20px 63px);
 }
+
 .logo-tagcompany {
   @include paddingLogo(19px 65px);
 }
+
 .logo-company {
   @include paddingLogo(24px 64px);
 }
+
 .logo-foster {
   @include paddingLogo(24px 45px);
 }
+
 .logo-brand {
   @include paddingLogo(22px 55px);
 }
+
 .logo-companytag {
   @include paddingLogo(22px 40px);
 }

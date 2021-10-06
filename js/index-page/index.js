@@ -1,3 +1,7 @@
-import { onOpenMenu, onCloseMenu } from '../index-page/menu.js';
-import { onOpenModal, onCloseModal } from '../index-page/modal.js';
-import form from '../index-page/form.js';
+import { onOpenMenu, onCloseMenu } from './menu.js';
+import { onOpenModal, onCloseModal } from './modal.js';
+import {
+  onSubmitForm,
+  onSubmitFooterForm,
+  clearStylesInputForm,
+} from './form.js';

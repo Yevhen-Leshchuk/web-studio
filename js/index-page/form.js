@@ -1,19 +1,4 @@
-const refs = {
-  modalFormRef: document.querySelector('.js-speaker-form'),
-  modalInputNameRef: document.querySelector('.js-input__name'),
-  modalInputTelRef: document.querySelector('.js-input__tel'),
-  modalInputMailRef: document.querySelector('.js-input__mail'),
-  modalLabelNameRef: document.querySelector('.form-field__label--name'),
-  modalLabelTelRef: document.querySelector('.form-field__label--tel'),
-  modalLabelMailRef: document.querySelector('.form-field__label--mail'),
-  modalInputIconNameRef: document.querySelector('.form-field__icon--name'),
-  modalInputIconTelRef: document.querySelector('.form-field__icon--tel'),
-  modalInputIconMailRef: document.querySelector('.form-field__icon--mail'),
-  checkBoxRef: document.querySelector('.js-policy'),
-  submitBtnRef: document.querySelector('.js-submit'),
-  footerInputRef: document.querySelector('.footer-field__input'),
-  footerFormRef: document.querySelector('.footer-form'),
-};
+import refs from './refs.js';
 
 //----------------------modal-form----------------------------------
 
@@ -26,13 +11,13 @@ function handleInputModal(e) {
   const formRef = e.target.value;
 
   if (formRef) {
-    refs.modalInputNameRef.classList.remove('.form-field__input--no-input');
+    refs.modalInputNameRef.classList.remove('form-field__input--no-input');
     refs.modalInputIconNameRef.classList.remove('form-field__icon--no-input');
 
-    refs.modalInputTelRef.classList.remove('.form-field__input--no-input');
+    refs.modalInputTelRef.classList.remove('form-field__input--no-input');
     refs.modalInputIconTelRef.classList.remove('form-field__icon--no-input');
 
-    refs.modalInputMailRef.classList.remove('.form-field__input--no-input');
+    refs.modalInputMailRef.classList.remove('form-field__input--no-input');
     refs.modalInputIconMailRef.classList.remove('form-field__icon--no-input');
   }
 }
@@ -80,7 +65,7 @@ function checkInput({ name, tel, mail }) {
       refs.modalInputNameRef.placeholder = 'Введите имя!';
       refs.modalInputNameRef.classList.add(
         'form-field__input--active',
-        '.form-field__input--no-input',
+        'form-field__input--no-input',
       );
       refs.modalLabelNameRef.classList.add('form-field__label--hidden');
       refs.modalInputIconNameRef.classList.add('form-field__icon--no-input');
@@ -88,7 +73,7 @@ function checkInput({ name, tel, mail }) {
       refs.modalInputTelRef.placeholder = 'Введите номер телефона!';
       refs.modalInputTelRef.classList.add(
         'form-field__input--active',
-        '.form-field__input--no-input',
+        'form-field__input--no-input',
       );
       refs.modalLabelTelRef.classList.add('form-field__label--hidden');
       refs.modalInputIconTelRef.classList.add('form-field__icon--no-input');
@@ -96,7 +81,7 @@ function checkInput({ name, tel, mail }) {
       refs.modalInputMailRef.placeholder = 'Введите email!';
       refs.modalInputMailRef.classList.add(
         'form-field__input--active',
-        '.form-field__input--no-input',
+        'form-field__input--no-input',
       );
       refs.modalLabelMailRef.classList.add('form-field__label--hidden');
       refs.modalInputIconMailRef.classList.add('form-field__icon--no-input');
@@ -108,7 +93,7 @@ function checkInput({ name, tel, mail }) {
         refs.modalInputNameRef.placeholder = 'Введите имя!';
         refs.modalInputNameRef.classList.add(
           'form-field__input--active',
-          '.form-field__input--no-input',
+          'form-field__input--no-input',
         );
         refs.modalLabelNameRef.classList.add('form-field__label--hidden');
         refs.modalInputIconNameRef.classList.add('form-field__icon--no-input');
@@ -120,7 +105,7 @@ function checkInput({ name, tel, mail }) {
       refs.modalInputTelRef.placeholder = 'Введите номер телефона!';
       refs.modalInputTelRef.classList.add(
         'form-field__input--active',
-        '.form-field__input--no-input',
+        'form-field__input--no-input',
       );
       refs.modalLabelTelRef.classList.add('form-field__label--hidden');
       refs.modalInputIconTelRef.classList.add('form-field__icon--no-input');
@@ -131,7 +116,7 @@ function checkInput({ name, tel, mail }) {
       refs.modalInputMailRef.placeholder = 'Введите email!';
       refs.modalInputMailRef.classList.add(
         'form-field__input--active',
-        '.form-field__input--no-input',
+        'form-field__input--no-input',
       );
       refs.modalLabelMailRef.classList.add('form-field__label--hidden');
       refs.modalInputIconMailRef.classList.add('form-field__icon--no-input');
@@ -139,31 +124,34 @@ function checkInput({ name, tel, mail }) {
       break;
 
     default:
-      // console.log('Default');
-      refs.modalInputNameRef.placeholder = ' ';
-      refs.modalInputNameRef.classList.remove(
-        'form-field__input--active',
-        '.form-field__input--no-input',
-      );
-      refs.modalLabelNameRef.classList.remove('form-field__label--hidden');
-      refs.modalInputIconNameRef.classList.remove('form-field__icon--no-input');
-
-      refs.modalInputTelRef.placeholder = ' ';
-      refs.modalInputTelRef.classList.remove(
-        'form-field__input--active',
-        '.form-field__input--no-input',
-      );
-      refs.modalLabelTelRef.classList.remove('form-field__label--hidden');
-      refs.modalInputIconTelRef.classList.remove('form-field__icon--no-input');
-
-      refs.modalInputMailRef.placeholder = ' ';
-      refs.modalInputMailRef.classList.remove(
-        'form-field__input--active',
-        '.form-field__input--no-input',
-      );
-      refs.modalLabelMailRef.classList.remove('form-field__label--hidden');
-      refs.modalInputIconMailRef.classList.remove('form-field__icon--no-input');
+      clearStylesInputForm();
   }
+}
+
+function clearStylesInputForm() {
+  refs.modalInputNameRef.placeholder = ' ';
+  refs.modalInputNameRef.classList.remove(
+    'form-field__input--active',
+    'form-field__input--no-input',
+  );
+  refs.modalLabelNameRef.classList.remove('form-field__label--hidden');
+  refs.modalInputIconNameRef.classList.remove('form-field__icon--no-input');
+
+  refs.modalInputTelRef.placeholder = ' ';
+  refs.modalInputTelRef.classList.remove(
+    'form-field__input--active',
+    'form-field__input--no-input',
+  );
+  refs.modalLabelTelRef.classList.remove('form-field__label--hidden');
+  refs.modalInputIconTelRef.classList.remove('form-field__icon--no-input');
+
+  refs.modalInputMailRef.placeholder = ' ';
+  refs.modalInputMailRef.classList.remove(
+    'form-field__input--active',
+    'form-field__input--no-input',
+  );
+  refs.modalLabelMailRef.classList.remove('form-field__label--hidden');
+  refs.modalInputIconMailRef.classList.remove('form-field__icon--no-input');
 }
 
 //----------------------footer-form--------------------------------------
@@ -213,4 +201,4 @@ function onSubmitFooterForm(event) {
   console.log(submittedData);
 }
 
-export default (onSubmitForm, onSubmitFooterForm);
+export { onSubmitForm, onSubmitFooterForm, clearStylesInputForm };

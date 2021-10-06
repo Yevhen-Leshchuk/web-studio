@@ -1,12 +1,15 @@
 .work {
   padding-bottom: 94px;
+
   @media screen and (max-width: 1199px) {
     display: none;
   }
 }
+
 .section-title {
   @extend %section-title;
 }
+
 .work-list {
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -15,6 +18,7 @@
     padding: 0;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .work-list__item {
     position: relative;
@@ -23,10 +27,12 @@
       flex-basis: calc(100% / 3 - 30px);
       margin-right: 30px;
     }
+
     &:nth-child(3n) {
       margin-right: 0;
     }
   }
+
   .work-list__overlay {
     position: absolute;
     left: 0;
@@ -38,6 +44,7 @@
 
     background-color: rgba(47, 48, 58, 0.8);
   }
+  
   .work-list__subtitle {
     @include fontProperty(
       $color: $whiteColor,

@@ -73,6 +73,7 @@
     $height: 1.16,
     $spacing: 0.06em
   );
+
   text-align: center;
   text-transform: uppercase;
 
@@ -80,12 +81,14 @@
     display: block;
     margin-bottom: 10px;
   }
+
   @media screen and (min-width: 480px) {
     font-size: 26px;
     &--text {
       margin-bottom: 23px;
     }
   }
+
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
@@ -170,6 +173,7 @@
     width: 100%;
     transform: translate(-50%, -50%) scale(1);
   }
+
   @media screen and (min-width: 1200px) {
     max-width: 528px;
   }
@@ -328,6 +332,7 @@
     margin-bottom: 20px;
   }
 }
+
 .form-textarea__label {
   margin-bottom: 4px;
 
@@ -339,6 +344,7 @@
   );
   text-align: left;
 }
+
 .form-textarea__textarea {
   width: 100%;
   height: 120px;
@@ -365,9 +371,11 @@
     outline: none;
     border-color: $accentColor;
   }
+
   @media screen and (min-width: 480px) {
     width: 370px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 448px;
   }
@@ -377,12 +385,14 @@
 .form-checkbox {
   display: block;
   margin-bottom: 20px;
+
   @media screen and (min-width: 480px) {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
   }
 }
+
 .form-checkbox__input {
   position: absolute;
   width: 1px;
@@ -396,6 +406,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .form-checkbox__icon {
   display: block;
   margin-left: auto;
@@ -420,6 +431,7 @@
     background-size: contain;
     background-origin: border-box;
   }
+
   @media screen and (min-width: 1200px) {
     display: inline-block;
     margin-right: 8px;
@@ -429,16 +441,21 @@
 
 .form-checkbox__label {
   margin-right: 6px;
+
   @include fontProperty($color: $primaryColor, $size: 12px, $height: 1.16);
+  
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.17;
   }
 }
+
 .form-checkbox__link {
   display: block;
+
   @include fontProperty($color: $accentColor, $size: 12px, $height: 1.16);
   text-decoration: underline;
+
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.17;

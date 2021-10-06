@@ -11,6 +11,7 @@ refs.footerFormRef.addEventListener('input', handleInputFooter);
 function handleInputFooter(e) {
   e.preventDefault();
   const formRef = e.target.value;
+
   if (formRef) {
     refs.footerInputRef.classList.remove(
       'footer-field__input--active',

@@ -1,19 +1,23 @@
 @mixin paddingLogo($type) {
   padding: $type;
 }
+
 @mixin flexDirection($type: column) {
   display: flex;
   flex-direction: $type;
 }
+
 @mixin alignedFlex($typeFlex: flex, $typeAlign: center) {
   display: $typeFlex;
   align-items: $typeAlign;
 }
+
 @mixin bordered($color) {
   border-right: 1px solid $borderColorCard;
   border-bottom: 1px solid $borderColorCard;
   border-left: 1px solid $borderColorCard;
 }
+
 @mixin fontProperty(
   $color: none,
   $weight: 400,
@@ -29,6 +33,7 @@
   letter-spacing: $spacing;
   text-transform: $transform;
 }
+
 @mixin containerMedia($mobile) {
   margin: 0 auto;
   padding-left: 15px;
