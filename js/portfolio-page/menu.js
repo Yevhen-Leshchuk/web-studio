@@ -2,13 +2,14 @@ const refs = {
   menuBtnOpen: document.querySelector('[data-menu-button-open]'),
   menuBtnClose: document.querySelector('[data-menu-button-close]'),
   mobileMenuRef: document.querySelector('[data-menu]'),
+  contactLinkRef: document.querySelector('.js-link--contact'),
   htmlRef: document.querySelector('html'),
   bodyRef: document.querySelector('body'),
 };
 
 refs.menuBtnOpen.addEventListener('click', onOpenMenu);
 refs.menuBtnClose.addEventListener('click', onCloseMenu);
-refs.contactLinkRef.addEventListener('click', onLinkContact);
+refs.contactLinkRef.addEventListener('click', onClickLinkContact);
 
 function onOpenMenu(event) {
   event.preventDefault();
@@ -44,7 +45,7 @@ function onCloseMenu() {
   refs.htmlRef.classList.toggle('is-landscape');
 }
 
-function onLinkContact(event) {
+function onClickLinkContact(event) {
   event.preventDefault();
   onCloseMenu();
 

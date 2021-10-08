@@ -2,7 +2,7 @@ import refs from './refs.js';
 
 refs.menuBtnOpen.addEventListener('click', onOpenMenu);
 refs.menuBtnClose.addEventListener('click', onCloseMenu);
-refs.contactLinkRef.addEventListener('click', onLinkContact);
+refs.contactLinkRef.addEventListener('click', onClickLinkContact);
 
 function onOpenMenu(event) {
   event.preventDefault();
@@ -38,7 +38,7 @@ function onCloseMenu() {
   refs.htmlRef.classList.toggle('is-landscape');
 }
 
-function onLinkContact(event) {
+function onClickLinkContact(event) {
   event.preventDefault();
   onCloseMenu();
 
