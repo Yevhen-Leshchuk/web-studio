@@ -43,7 +43,8 @@
 }
 
 .site-nav {
-  margin-bottom: 60px;
+  margin-top: 60px;
+  margin-bottom: 100px;
 
   & .site-nav__item {
     display: flex;
@@ -75,7 +76,7 @@
   @include fontProperty(
     $color: $titleColor,
     $weight: 500,
-    $size: 36px,
+    $size: 37px,
     $height: 1.18,
     $spacing: 0.02em
   );
@@ -127,10 +128,11 @@
 
 @media screen and (max-width: 767px) {
   .header-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 50px;
+    display: none;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-start;
+    // margin-bottom: 50px;
   }
 }
 
@@ -478,5 +480,9 @@
   &:hover,
   &:focus {
     color: $accentColor;
+  }
+
+  @media screen and (max-width: 480px) {
+  font-size: 30px;
   }
 }

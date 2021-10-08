@@ -19,6 +19,10 @@ const refs = {
   submitBtnRef: document.querySelector('.js-submit'),
   footerInputRef: document.querySelector('.footer-field__input'),
   footerFormRef: document.querySelector('.footer-form'),
+  menuBtnOpen: document.querySelector('[data-menu-button-open]'),
+  menuBtnClose: document.querySelector('[data-menu-button-close]'),
+  mobileMenuRef: document.querySelector('[data-menu]'),
+  contactLinkRef: document.querySelector('.js-link--contact'),
 };
 
 export default refs;
