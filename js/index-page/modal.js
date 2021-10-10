@@ -8,7 +8,7 @@ refs.modal.addEventListener('click', onLightboxClick);
 function onOpenModal(event) {
   event.preventDefault();
 
-  refs.bodyRef.classList.add('modal-open', 'is-hidden');
+  refs.bodyRef.classList.add('modal-open', 'body_landscape--hidden');
   refs.htmlRef.classList.add('is-landscape');
 
   refs.modal.classList.remove('backdrop--hidden');
@@ -19,7 +19,7 @@ function onOpenModal(event) {
 function onCloseModal() {
   refs.modal.classList.add('backdrop--hidden');
 
-  refs.bodyRef.classList.remove('modal-open', 'is-hidden');
+  refs.bodyRef.classList.remove('modal-open', 'body_landscape--hidden');
   refs.htmlRef.classList.remove('is-landscape');
 
   window.removeEventListener('keydown', onKeyPress);
