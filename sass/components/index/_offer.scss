@@ -1,5 +1,9 @@
+.body_vertical--hidden {
+  overflow: hidden;
+}
+
 @media (max-width: 830px) and (orientation: landscape) {
-  .is-hidden {
+  .body_landscape--hidden {
     display: none;
   }
 }

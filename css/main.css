@@ -822,11 +822,11 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .header-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 120vh;
+    height: 100vh;
     display: none;
     background-color: #ffffff;
     text-align: center;
@@ -835,14 +835,6 @@ body.modal-open {
   .is-open {
     display: block;
     z-index: 9998;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .header-menu {
-    position: fixed;
-    width: 100vw;
-    height: 120vh;
   }
 }
 
@@ -991,8 +983,12 @@ body.modal-open {
   }
 }
 
+.body_vertical--hidden {
+  overflow: hidden;
+}
+
 @media (max-width: 830px) and (orientation: landscape) {
-  .is-hidden {
+  .body_landscape--hidden {
     display: none;
   }
 }
