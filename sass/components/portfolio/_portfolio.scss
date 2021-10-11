@@ -103,10 +103,6 @@
     flex-basis: calc(100% / 2 - 30px);
     margin-right: 30px;
 
-    // &:nth-child(2n) {
-    //   margin-right: 0;
-    // }
-
     &:nth-child(n + 9) {
       margin-bottom: 0;
     }
@@ -119,10 +115,6 @@
       margin-right: 30px;
     }
 
-    // &:nth-child(3n) {
-    //   margin-right: 0;
-    // }
-
     &:nth-child(n + 7) {
       margin-bottom: 0;
     }
@@ -131,6 +123,10 @@
 
 .portfolio-list__link, .portfolio-list__card--visible {
   display: block;
+}
+
+.portfolio-list__card-image {
+  width: 100%;
 }
 
 .portfolio-content {
