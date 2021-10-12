@@ -8,8 +8,9 @@
   }
 }
 
-.is-landscape {
+.is-landscape::before {
   @media (max-width: 830px) and (orientation: landscape) {
+    content: "";
     position: fixed;
     top: 50%;
     left: 50%;

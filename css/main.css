@@ -994,7 +994,8 @@ body.modal-open {
 }
 
 @media (max-width: 830px) and (orientation: landscape) {
-  .is-landscape {
+  .is-landscape::before {
+    content: "";
     position: fixed;
     top: 50%;
     left: 50%;
